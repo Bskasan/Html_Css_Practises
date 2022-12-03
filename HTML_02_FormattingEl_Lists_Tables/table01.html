@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tables - 01 </title>
+</head>
+<body>
+
+    <!-- table>tr*2>td*4 -->
+    <table border="3">
+        <tr>
+            <!--<td colspan="4" align="center">MAY</td>>-->
+            <th colspan="4"> MAY </th>
+        </tr>
+        <tr>
+            <td>W1</td>
+            <td>W2</td>
+            <td>W3</td>
+            <td>W4</td>
+        </tr>
+
+    </table>
+
+    <hr><hr>
+
+    <table border="3">
+        <tr>
+            <th>Days</th>
+            <th>C-1</th>
+            <th>C-2</th>
+            <th>C-3</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td> <!--Be sure one less row next to rowspan-->
+        </tr>
+    </table>
+
+    <hr><hr>
+
+    <table border="3">
+        <tr>
+            <th colspan="2">A</th>
+            <th>B</th>
+            <th colspan="2">C</th>
+        </tr>
+        <tr>
+            <th>D</th>
+            <th>E</th>
+            <th rowspan="2">F</th>
+            <th>G</th>
+            <th>H</th>
+        </tr>
+        <tr>
+            <th>I</th>
+            <th>J</th>
+            <th>K</th>
+            <th>L</th>
+        </tr>
+        <tr>
+            <th>M</th>
+            <th colspan="3" rowspan="2">N</th>
+            <th>O</th>
+        </tr>
+        <tr>
+            <th>P</th>
+            <th>Q</th>           
+        </tr>
+    </table>
+</body>
+</html>
