@@ -1,3 +1,31 @@
 h1 {
   color: blue;
 }
+
+#title {
+  font-size: 72px;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+/* 
+Selectors: 
+element/tag selector: tag{}(
+    >> Select all paragraph elements and make text color blue
+    p{
+        color: blue;
+    }
+)
+
+universal selector (*)
+>> This would select every element and apply a pink color
+*{
+    color: pink;
+}
+
+ID Selector:
+
+Class Selector:
+
+*/
