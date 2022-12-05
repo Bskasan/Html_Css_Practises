@@ -1,0 +1,139 @@
+/* basic CSS reset with universal selector: */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: pink;
+}
+
+h1 {
+  background-color: palevioletred;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#yellowSpan {
+  color: yellow;
+}
+
+.red {
+  color: red;
+}
+
+#clock {
+  text-align: center;
+}
+
+img {
+  margin: 0 auto;
+  height: 100px;
+  width: auto;
+}
+
+table {
+  margin: auto;
+  background-color: yellow;
+}
+
+th,
+td {
+  height: 120px;
+  width: 120px;
+  text-align: center;
+}
+
+.sunday {
+  background-color: yellowgreen;
+  color: black;
+}
+
+.js {
+  background-color: purple;
+  color: rgb(170, 170, 238);
+}
+
+.css {
+    background-color: aqua;
+    color: navy;
+}
+
+.liveClass{
+    background-color: blue;
+    color: white;
+}
+
+.grey{
+    background-color: grey;
+}
+
+.interviewPrep{
+    color: rgb(243, 128, 128);
+}
+
+.teamWork{
+    color: rgb(73, 58, 58);
+}
+
+.workShop{
+    color: red;
+}
+
+.shopping{
+    background-color: rgb(109, 241, 1);
+    color: rgb(241, 8, 241);
+}
+
+th {
+  color: blue;
+}
+
+#clean {
+  background-color: olive;
+  color: orange;
+}
+
+#happyCoding{
+    background-color: yellow;
+    color: blue;
+    text-align: center;
+    margin: 20px 20px 20px;
+    border: 2px dotted black;
+}
+
+/*
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+*/
