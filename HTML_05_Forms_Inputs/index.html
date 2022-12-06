@@ -4,20 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Forms</title>
+    <title>HTML-5 Forms</title>
   </head>
+  <style>
+    p{
+        font-size: 20px;
+        color: purple;
+    }
+  </style>
   <body>
     <div style="text-align: center">
+      <!-- * Action element shows us which website page show up after we submitted. -->
+      <!-- * if you're adding a new data to the server, you should use post method. -->
+      <!-- * Each input element need to have name attribute, because the value of this attribute identifies the form control. -->
       <form action="submitted.html" method="get">
-        <h3>!!!Contac Us!!!</h3>
-        <label for="email">First Name: </label>
+        <h3><u>Application For the Full-Stack Course</u></h3>
+        <label for="email">First Name: </label> <br />
         <input type="text" name="firstname" id="firstname" /><br /><br />
-        <input type="submit" value="Submit">
+
+        <label for="password">Password</label><br />
+        <input type="password" name="password" id="password" /><br /><br />
+
+        <label for="username">Username</label><br />
+        <input type="text" name="username" id="username" /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" name="email" id="password" /><br /><br />
+
+        <h3>GENDER:</h3>
+        <input type="radio" name="gender" value="male" checked /> Male<br />
+        <input type="radio" name="gender" value="female" /> Female<br /><br />
+
+        <p><b>What do you prefer?</b></p>
+        <input type="checkbox" name="jobtype" value="part-time" /> Part-Time
+        <br />
+        <input type="checkbox" name="jobtype" value="full-time" /> Full-Time
+        <br />
+
+        <p>
+          <b><u>What is your motivation for this course?</u></b>
+        </p>
+        <textarea name="tellmeaboutyourself" rows="10" cols="60">Write here...</textarea
+        ><br /><br />
+
+        <input type="submit" value="Submit" />
+        <!-- <button>Submit</button> -->
         <!--
-            <label for="email">Surname: </label>
-            <input type="text" name="surname" id="surname"><br><br>
-            <label for="email">Your E-mail: </label>
-            <input type="text" name="email" id="email">
+            ? Firt you should add label and then input field.
+            * <label for="email">Surname: </label>
+            * <input type="text" name="surname" id="surname"><br><br>
+            * <label for="email">Your E-mail: </label>
+            * <input type="text" name="email" id="email">
         -->
       </form>
     </div>
