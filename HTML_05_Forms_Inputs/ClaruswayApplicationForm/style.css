@@ -3,20 +3,14 @@ p {
   color: purple;
 }
 
-div {
+div.solid {
   background-color: rgb(188, 188, 224);
   margin: auto;
+  text-align: center;
+  border: 10px solid rgb(238, 154, 154);
 }
 
 img {
   margin: auto;
   background-color: antiquewhite;
-}
-
-#submitpage {
-  background-color: pink;
-  color: black;
-  font-size: large;
-  margin: 100 px;
-  text-align: center;
 }
