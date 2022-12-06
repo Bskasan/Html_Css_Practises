@@ -5,31 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML-5 Forms</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <style>
-    p{
-        font-size: 20px;
-        color: purple;
-    }
-  </style>
   <body>
     <div style="text-align: center">
       <!-- * Action element shows us which website page show up after we submitted. -->
       <!-- * if you're adding a new data to the server, you should use post method. -->
       <!-- * Each input element need to have name attribute, because the value of this attribute identifies the form control. -->
+      <!-- *The novalidate attribute in HTML is used to signify that the form won’t get validated on submit. It is a Boolean attribute and useful if you want the user to save the progress of form filing. If the form validation is disabled, the user can easily save the form and continue & submit the form later. -->
       <form action="submitted.html" method="get">
         <h3><u>Application For the Full-Stack Course</u></h3>
-        <label for="email">First Name: </label> <br />
-        <input type="text" name="firstname" id="firstname" /><br /><br />
+        <img
+          src="https://clarusway.com/wp-content/uploads/2022/02/Adsiz-tasarim-4-300x78.png"
+          alt="clarusway"
+        />
+        <br />
+        <label for="email">Full Name:* </label> <br />
+        <input
+          type="text"
+          name="fullname"
+          id="fullname"
+          required
+          placeholder="Enter your Full Name"
+        /><br /><br />
 
-        <label for="password">Password</label><br />
-        <input type="password" name="password" id="password" /><br /><br />
+        <label for="password">Password:*</label><br />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          placeholder="Enter your password"
+        /><br /><br />
 
-        <label for="username">Username</label><br />
-        <input type="text" name="username" id="username" /><br /><br />
+        <label for="username">Username:*</label><br />
+        <input
+          type="text"
+          name="username"
+          id="username"
+          required
+          placeholder="Enter your username"
+        /><br /><br />
 
-        <label for="email">Email:</label><br />
-        <input type="email" name="email" id="password" /><br /><br />
+        <label for="email">Email:*</label><br />
+        <input
+          type="email"
+          name="email"
+          id="password"
+          required
+          placeholder="Enter your email"
+        /><br /><br />
 
         <h3>GENDER:</h3>
         <input type="radio" name="gender" value="male" checked /> Male<br />
@@ -44,10 +69,18 @@
         <p>
           <b><u>What is your motivation for this course?</u></b>
         </p>
-        <textarea name="tellmeaboutyourself" rows="10" cols="60">Write here...</textarea
+        <textarea
+          name="tellmeaboutyourself"
+          rows="10"
+          cols="60"
+          maxlength="300"
+        >
+Write here...</textarea
         ><br /><br />
 
         <input type="submit" value="Submit" />
+        <input type="reset" value="Reset Form" />
+        <br /><br />
         <!-- <button>Submit</button> -->
         <!--
             ? Firt you should add label and then input field.

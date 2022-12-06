@@ -1,0 +1,22 @@
+p {
+  font-size: 20px;
+  color: purple;
+}
+
+div {
+  background-color: rgb(188, 188, 224);
+  margin: auto;
+}
+
+img {
+  margin: auto;
+  background-color: antiquewhite;
+}
+
+#submitpage {
+  background-color: pink;
+  color: black;
+  font-size: large;
+  margin: 100 px;
+  text-align: center;
+}
