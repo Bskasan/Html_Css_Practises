@@ -23,18 +23,12 @@ label {
   width: 100px;
 }
 
-.lang-div {
-  display: inline-block;
-}
-
+.lang-div,
 .gender-div {
   display: inline-block;
 }
 
-.lang-div label {
-  width: auto;
-}
-
+.lang-div label,
 .gender-div label {
   width: auto;
 }
