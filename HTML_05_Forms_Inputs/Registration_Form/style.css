@@ -7,20 +7,30 @@
 body {
   font-family: "Nerko One", cursive;
   font-size: 20px;
+  background-image: url(https://cdn.pixabay.com/photo/2017/10/13/14/15/fantasy-2847724_960_720.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* ! Body doesn't have default height */
+  /* ! The surface of the browser page we see on the screen.
+     ! 100% of the screen we see on the browser. I will cover this later.*/
+  height: 100vh;
 }
 
 h1 {
   padding: 20px 0;
   text-align: center;
+  color: rgb(15, 11, 11);
 }
 
 form {
   /*Ic hacim vermek icin onemli padding*/
   /*the width of the content -> fit-content*/
-  background-color: aqua;
+  background-image: linear-gradient(rgb(68, 45, 45), rgb(207, 186, 186));
   width: fit-content;
   margin: 20px auto;
   padding: 30px;
+  border-radius: 10px;
 }
 
 label {
@@ -66,15 +76,20 @@ label {
   width: 100px;
   border-radius: 10px;
   border: none;
-  background-color: hsl(299, 100%, 70%);
+  background-color: hsl(300, 2%, 34%);
   padding: 10px;
   margin-top: 20px;
 }
 
 .btn-container input:hover {
-  background-color: hsl(299, 100%, 40%);
+  background-color: hsl(300, 2%, 40%);
   color: aliceblue;
   font-weight: 700;
   cursor: pointer;
   /* pointer -> hand icon */
 }
+
+.textarea-div * {
+  vertical-align: middle;
+}
+/* * -> All element are going to the middle wiht it / Seleck all element in this div of a class*/
