@@ -6,6 +6,12 @@
 
 body {
   font-family: "Nerko One", cursive;
+  font-size: 20px;
+}
+
+h1 {
+  padding: 20px 0;
+  text-align: center;
 }
 
 form {
@@ -31,4 +37,44 @@ label {
 .lang-div label,
 .gender-div label {
   width: auto;
+  margin-right: 10px;
+}
+
+.inputs {
+  border-radius: 5px;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  /*
+  none
+  alpha -> means opacity / Transparency
+
+  */
+}
+
+.radio-check {
+  margin-bottom: 20px;
+  /*margin-left: 10px;*/
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.btn-container input {
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(299, 100%, 70%);
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.btn-container input:hover {
+  background-color: hsl(299, 100%, 40%);
+  color: aliceblue;
+  font-weight: 700;
+  cursor: pointer;
+  /* pointer -> hand icon */
 }
