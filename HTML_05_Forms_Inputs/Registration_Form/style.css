@@ -7,3 +7,34 @@
 body {
   font-family: "Nerko One", cursive;
 }
+
+form {
+  /*Ic hacim vermek icin onemli padding*/
+  /*the width of the content -> fit-content*/
+  background-color: aqua;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 30px;
+}
+
+label {
+  /*Label is inline element, width property doesn't work properly*/
+  display: inline-block;
+  width: 100px;
+}
+
+.lang-div {
+  display: inline-block;
+}
+
+.gender-div {
+  display: inline-block;
+}
+
+.lang-div label {
+  width: auto;
+}
+
+.gender-div label {
+  width: auto;
+}
