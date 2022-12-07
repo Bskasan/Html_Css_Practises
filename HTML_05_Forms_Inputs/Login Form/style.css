@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  /* font-family: "La Belle Aurore", cursive; */
+}
+
+form {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+
+  text-align: center;
+  padding: 20px;
+  width: fit-content;
+  /* margin: 10px auto; */
+  display: inline-block;
+
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+label {
+  display: inline-block;
+  text-align: left;
+  width: 110px;
+}
