@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    var out1 = "I am at the outside (VAR out1)";
+    let out2 = "I am at the outside (LET out2)";
+    const pi = 3.14;
+
+    console.log(out1);
+    console.log(out2);
+    console.log(pi);
+
+    console.log("================================");
+    {
+      //This is a local block
+      var out1 = "I am at the inside (VAR out1)";
+      let out2 = "I am at the inside (LET out2)";
+
+      console.log(out1);
+      console.log(out2);
+    }
+
+    console.log("================================");
+    console.log(out1);
+    console.log(out2);
+
+    // var is gloabal and you can access anywhere you want. it can be changed unintendable.
+    //Use let as much as you can.
+    
+  </script>
+  <body></body>
+</html>
