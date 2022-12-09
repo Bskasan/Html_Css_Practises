@@ -1,0 +1,16 @@
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+body {
+  text-align: center;
+}
+
+.favfont {
+  font-family: "Open Sans", sans-serif;
+}

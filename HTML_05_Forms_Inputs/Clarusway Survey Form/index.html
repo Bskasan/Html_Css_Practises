@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clarusway Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="favfont">Clarusway Survey Form</h1>
+    <p class="favfont">
+      Thank you for taking the time to help us improve the platform
+    </p>
+
+    <form action="">
+      <div class="favfont">
+        <label for="firstname">Name</label><br />
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder="Enter your name"
+        />
+      </div>
+
+      <div class="favfont">
+        <label for="surname">Surname</label><br />
+        <input
+          type="text"
+          name="surname"
+          id="surname"
+          placeholder="Enter your Surname"
+        />
+      </div>
+
+      <div class="favfont">
+        <label for="email">Email</label><br />
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="user@clarusway.com"
+        />
+      </div>
+
+      <div class="favfont">
+        <label for="role">Which option best describes your current role?</label
+        ><br />
+        <select name="role" id="role">
+          <option value="selectcurrentrole" disabled selected>
+            Select current role
+          </option>
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+          <option value="fulltime">Full-Time Job</option>
+          <option value="parttime">Part-Time Job</option>
+          <option value="fulltimelearn">Full-Time Learner</option>
+          <option value="notsaying">Prefer not to say</option>
+        </select>
+      </div>
+
+      <div class="favfont">
+        <label for="recommend">Would you recommend Clarusway to a friend?</label
+        ><br />
+        <input type="radio" name="recommend" />Definitely, Yes <br />
+        <input type="radio" name="recommend" />Maybe <br />
+        <input type="radio" name="recommend" />Not sure <br />
+        <input type="radio" name="recommend" />Definitely, No <br />
+      </div>
+
+      <div class="favfont">
+        <label for="improve"
+          >What would you like to see improved? (Check all that apply)</label
+        ><br />
+        <input type="checkbox" /> Front-end Projects <br />
+        <input type="checkbox" /> Back-end Projects<br />
+        <input type="checkbox" /> Data Science<br />
+        <input type="checkbox" /> Additional Courses<br />
+      </div>
+
+      <div class="favfont">
+        <label for="comment">Any comments or suggestions?</label><br />
+        <textarea name="comments" id="comments" cols="30" rows="10">
+Enter your comments here. Thanks for you time.
+        </textarea>
+      </div>
+
+      <div class="favfont">
+        <input type="submit" value="Submit" class="favfont" />
+      </div>
+    </form>
+  </body>
+</html>
