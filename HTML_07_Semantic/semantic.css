@@ -23,4 +23,50 @@ nav {
   background-color: hsla(298, 73%, 54%, 0.726);
   padding: 20px;
   font-size: 20px;
+  color: aliceblue;
+}
+
+/* ! Links are special element, so they don't take directly color from parent element.*/
+
+nav a {
+  color: aliceblue;
+  text-decoration: none; /* * to remove underline */
+}
+
+/* ? This is how it is seen when we get our mouse to the link */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ? Linkin tikli kaldigi sure boyunca stili */
+nav a:active {
+  color: black;
+}
+
+/* link not visited */
+/*
+nav a:link {
+  color: green;
+}
+*/
+
+/* visited link */
+/*
+nav a:visited {
+  color: yellow;
+}
+*/
+
+h2 {
+  margin: 20px 0; /* top - bottom margin */
+}
+
+figcaption {
+  margin-bottom: 30px;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.808);
+  color: white;
+  padding: 20px;
 }
