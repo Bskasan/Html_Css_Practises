@@ -8,7 +8,6 @@
   </head>
   <body>
     <div id="results">
-      <a href="index.html">!Back To Form!</a>
       <script>
         const resultList = document.getElementById("results");
         new URLSearchParams(window.location.search).forEach((value, name) => {
@@ -16,6 +15,8 @@
           resultList.append(document.createElement("br"));
         });
       </script>
+      <br />
+      <a href="index.html">!Back To Form!</a>
     </div>
   </body>
 </html>
