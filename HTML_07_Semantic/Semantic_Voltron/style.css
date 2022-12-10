@@ -111,6 +111,7 @@ form input {
   border-radius: 28px;
   border: 4px solid white;
 }
+/*focus means that when you click on text/email types input.*/
 form input:focus {
   border: 4px dashed #4b4b4b;
   outline: none;
@@ -124,8 +125,9 @@ form input:valid {
 footer {
   background: #f63232;
   color: white;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
+  font-size: 20px;
 }
 /* responsive styles */
 @media screen and (max-width: 1400px) {
