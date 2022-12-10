@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+header {
+  padding: 40px;
+  background-color: rgb(219, 15, 15);
+  color: white;
+  font-size: 40px;
+}
+
+nav {
+  /* #BC6BFA */
+  /* rgba(232, 24, 232, 0.558) */
+  /* In the industry rgb and hex code are used more than hsl color code. */
+  background-color: hsla(298, 73%, 54%, 0.726);
+  padding: 20px;
+  font-size: 20px;
+}
