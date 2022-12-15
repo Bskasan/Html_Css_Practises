@@ -17,8 +17,89 @@
 }
 
 /******* FONTAWESOME ********/
-.awesome{
-    color: red;
-    font-size: 2rem;
+.awesome {
+  color: red;
+  font-size: 2rem;
+}
 
+/******* PSEUDO CLASSES ********/
+ul.pseudo-classes li {
+  list-style-type: none;
+  background-color: aliceblue;
+  border: 1px solid grey;
+  width: 10rem;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 5px solid darkblue;
+  text-align: center;
+}
+
+ul.pseudo-classes li:first-child {
+  background-color: antiquewhite;
+  color: red;
+}
+
+ul.pseudo-classes li:nth-child(even) {
+  /* ? ...we can write here odd or even...*/
+  background-color: green;
+  color: white;
+}
+
+ul.pseudo-classes li:last-child {
+  background-color: orange;
+  color: white;
+}
+
+ul.pseudo-classes li:nth-child(4) {
+  /* ? ...we can write here odd or even...*/
+  background-color: purple;
+  color: white;
+}
+
+ul.pseudo-classes li:nth-child(4) {
+  /* ? ...we can write here odd or even...*/
+  background-color: purple;
+  color: white;
+}
+
+ul.pseudo-classes li:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+ul.pseudo-classes li:active {
+  font-weight: 900;
+  color: blue;
+}
+
+/******* PSEUDO ELEMENT ********/
+/* ? Pseudo Elements ::before, ::after, ::first-line, ::first-letter */
+
+/* * Pseudo element helps us to add an element which HTML doesn't consist of and to style this element. */
+
+ul.pseudo-classes li::before {
+  content: " ❤ ";
+}
+
+ul.pseudo-classes li::after {
+  content: " 😎 ";
+}
+
+ul.pseudo-classes li:nth-child(odd)::before {
+    content: " 🐱‍🏍 ";
+  }
+
+  ul.pseudo-classes li:last-child::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 700;
+    content: " \f81d ";
+  }
+
+.ps-elements::first-line {
+    font-weight: 900;
+}
+
+.ps-elements::first-letter {
+    font-size: 200%;
 }
