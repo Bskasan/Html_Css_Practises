@@ -83,3 +83,14 @@ div.transformation p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-transform: capitalize; /* ? lowercase / uppercase / none*/
 }
+
+div.transformation p.indent {
+  /* ! The text-indent is used to set indentation of the first line. */
+  text-indent: 20px;
+}
+
+.spacing {
+  line-height: 1.5;
+  letter-spacing: 5px; /* ? For letter spacing -> letter-spaceing */
+  word-spacing: 10px; /* ? For spacing between words -> word-spaceing */
+}
