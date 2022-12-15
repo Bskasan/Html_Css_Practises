@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+}
+
+/************ LISTS **************/
+
+.languages {
+  list-style-type: circle; /* ? circle, disk, square, none, lower alpha,etc.*/
+  list-style-position: inside;
+  /* padding: 0; */
+  /* margin: 20px; */
+  list-style-image: linear-gradient(to left bottom, red, blue);
+  /* ? url(https://cdn-icons-png.flaticon.com/128/7739/7739845.png); */
+  /* ? linear-gradient(to left bottom, red, blue); */
+  /* ? or you can use image or icon by using url() */
+}
+
+/******* FONTAWESOME ********/
+.awesome{
+    color: red;
+    font-size: 2rem;
+
+}
