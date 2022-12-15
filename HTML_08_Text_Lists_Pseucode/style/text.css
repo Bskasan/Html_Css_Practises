@@ -93,4 +93,12 @@ div.transformation p.indent {
   line-height: 1.5;
   letter-spacing: 5px; /* ? For letter spacing -> letter-spaceing */
   word-spacing: 10px; /* ? For spacing between words -> word-spaceing */
+  direction: ltr; /* ? The direction of writing */
+}
+
+.shadow h2 {
+  /* * text-shadow property adds shadow to text */
+  /* * text-shadow: 2px -> Horizontal Distance, 2px -> Vertical Distance, 3px -> Blur radius, #DDD -> Shadow Color */
+
+  text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.7); /* not commonly used */
 }
