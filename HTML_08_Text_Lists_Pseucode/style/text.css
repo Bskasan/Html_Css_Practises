@@ -1,0 +1,63 @@
+html {
+  /* ? Default font-size 16px, you can change with CSS it if you want.*/
+  /* font-size: 20px; */
+}
+
+h1 {
+  /* ? default font-size * 2 = 32px */
+  /* ? Font-size is seen 40px because of 20px above */
+  color: red;
+}
+
+p {
+  font-size: 30px;
+}
+
+p.absoluteSize {
+  font-size: 20px;
+  /* ? We override on default sizes. We commonly use 'px' */
+}
+
+p.relativeSizePercent {
+  /* ? 2 * 16px -> default size/ 200% of 16px*/
+  font-size: 200%;
+}
+
+/* ? ------------------------------------------ ? */
+/* ! Parental connection between html elements if you use 'em' size. */
+/* ! */
+
+.div1 {
+  font-size: 1em;
+  /* ? 1 em equals to default font-size -> 16px */
+}
+
+.div2 {
+  font-size: 2em;
+  /* ? 2 * font-size of the parent that means div1 */
+}
+
+.div3 {
+  font-size: 3em;
+  /* ? 3 * font-size of the parent that means div2 */
+}
+
+/* ? ------------------------------------------ ? */
+/* ? REM Size */
+/* ? it changes depends on the 'root' element, it means html element */
+/* ? Why we should use rem size,  we will write thousands of lines of code in the future and if you use px, when you need to change it, you need to make it line by line. But when you use rem, since it depends on the size of default element you can easily solve this problem by changing default px value.*/
+
+.div4 {
+  font-size: 1rem;
+  /* ! 1 * 16px */
+}
+
+.div5 {
+  font-size: 2rem;
+  /* ! 2 * 16px */
+}
+
+.div6 {
+  font-size: 3rem;
+  /* ! 3 * 16px */
+}
