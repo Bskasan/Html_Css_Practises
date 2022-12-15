@@ -46,6 +46,7 @@ p.relativeSizePercent {
 /* ? REM Size */
 /* ? it changes depends on the 'root' element, it means html element */
 /* ? Why we should use rem size,  we will write thousands of lines of code in the future and if you use px, when you need to change it, you need to make it line by line. But when you use rem, since it depends on the size of default element you can easily solve this problem by changing default px value.*/
+/* ? Generally use px and rem. */
 
 .div4 {
   font-size: 1rem;
@@ -60,4 +61,25 @@ p.relativeSizePercent {
 .div6 {
   font-size: 3rem;
   /* ! 3 * 16px */
+}
+
+/* ? ------------------------------------------ ? */
+/******* Text style *********/
+
+p.text-style {
+  font-style: italic; /* normal / italic / oblique */
+  font-weight: 100; /* ? Bold Settings - bolder depends on the parent */
+  font-variant: small-caps;
+  text-align: justify; /* center / right / left */
+}
+
+p.text-style .elit {
+  color: red;
+  text-decoration: line-through; /* ? overline / underline / none*/
+}
+
+div.transformation p {
+  font-size: 1.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: capitalize; /* ? lowercase / uppercase / none*/
 }
