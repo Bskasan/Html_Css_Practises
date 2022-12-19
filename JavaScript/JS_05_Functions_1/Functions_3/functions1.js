@@ -18,6 +18,13 @@ function ReverseText(str){
     }
 
     return newString;
+
+    //Another solution
+    // let result = "";
+    // for(let i = 0; i < str.length; i++){
+    //    result += str[i]
+    //}
+    // return result;
 }
 
 var reversedMyName = ReverseText("Bekir");
