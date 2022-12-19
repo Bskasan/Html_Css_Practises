@@ -20,8 +20,20 @@ sayHi();
 //sayHello();
 // Error -> index.js:19 Uncaught ReferenceError: Cannot access 'sayHello' before initialization
 
-const sayHello = function(){
-    console.log("hello");
-}
+const sayHello = function () {
+  console.log("hello");
+};
 
 sayHello();
+
+function Greet(name) {
+  console.log(`Hello ${name}`);
+  console.log("Hello ", name);
+  // Two different version of string concanetation
+}
+
+Greet("Bekir");
+Greet("Mahmut");
+Greet("Zeyneb");
+
+// name is parameter, and Bekir, Mahmut, and Zeyneb are arguments that we gave to the function.
