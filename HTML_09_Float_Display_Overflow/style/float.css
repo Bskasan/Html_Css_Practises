@@ -1,0 +1,19 @@
+/*
+    The float property is used for positioning and formatting content. The float property can have one of the following values;
+    
+    1- left -> The element floats to the left of its container
+    2- right -> to the right of its corner.
+    3- none -> Default. The element does not float.
+    4- inherit -> The element inherits the float value of it parent.
+
+    How we can change layout of HTML;
+        - display -> inline, inline-bloc, block
+        - position -> absolute, relative, fixed, sticky
+        - float -> left, right, none
+        - display -> flex
+        - display -> grid -CSS grid-
+*/
+
+.img-float{
+    width: 40%;
+}
