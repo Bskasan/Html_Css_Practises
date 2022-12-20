@@ -28,6 +28,8 @@ function ReverseText(str){
 }
 
 var reversedMyName = ReverseText("Bekir");
+var reversedHello = ReverseText("Hello");
 
 console.log(reversedMyName);
+console.log(reversedHello);
 
