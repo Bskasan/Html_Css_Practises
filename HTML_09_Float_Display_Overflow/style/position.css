@@ -1,0 +1,47 @@
+/*
+Position Property
+The PP sets the type of positioning method used for an element.
+
+Static - Default value for html. An element with position: static;is not positioned in any special way; it is always positioned according to the normal flow of the page.
+
+Relative - An element with position: relative; is positioned relative to its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+Fixed -
+
+Absolute - An element with position: absolute; is positioned relative to the nearest positioned parent. The parent must have a position anything except static.
+
+Sticky
+
+*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  height: 1000px;
+  border: 1px solid red;
+}
+
+h1 {
+  background-color: aquamarine;
+}
+
+.box {
+  width: 7rem;
+  height: 7rem;
+}
+
+.box1 {
+  background-color: aqua;
+  position: relative;
+  top: 2rem;
+  left: 2rem;
+}
+
+.box2 {
+  background-color: red;
+  position: relative;
+  top: 4rem;
+  left: 2rem;
+}
