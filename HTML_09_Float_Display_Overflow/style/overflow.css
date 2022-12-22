@@ -1,0 +1,25 @@
+.box{
+    border: 2px solid red;
+    margin-bottom: 3rem;
+    width: 25rem;
+    height: 8rem;
+}
+
+.box1{
+    background-color: aquamarine;
+    overflow: visible; /* Default value. */
+}
+
+.box2{
+    overflow: hidden; /* You cannot see rest of the text. */
+}
+
+.box3{
+    overflow: scroll;
+}
+
+.box4{
+    overflow: auto;
+}
+
+
