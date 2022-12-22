@@ -1,0 +1,37 @@
+.box {
+  width: 7rem;
+  height: 4rem;
+  border: 1px solid black;
+}
+
+.box1 {
+  background-color: brown;
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  z-index: 1;
+}
+
+.box2 {
+  background-color: rgb(235, 146, 146);
+  position: absolute;
+  left: 75px;
+  top: 50px;
+  z-index: 2;
+}
+
+.box3 {
+  background-color: rgb(107, 108, 212);
+  position: absolute;
+  top: 80px;
+  left: 100px;
+  z-index: 3;
+}
+
+.box4 {
+  background-color: rgb(72, 218, 67);
+  position: absolute;
+  left: 125px;
+  top: 110px;
+  z-index: 4;
+}
