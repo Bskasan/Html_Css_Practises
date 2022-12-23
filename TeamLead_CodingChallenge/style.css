@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e8d6d0;
+}
+
+h3 {
+  font-family: "Merriweather", serif;
+  padding: 10px;
+}
+
+.cw-container {
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+  top: 150px;
+}
+
+.img-clarusway {
+  width: 185px;
+  height: 185px;
+  border: 5px solid #2c2c2c;
+  border-radius: 300px;
+}
+
+.date-text {
+  color: rgb(153, 153, 29);
+}
+
+.text-container {
+  margin: auto;
+  width: 610px;
+  height: 610px;
+  text-align: center;
+  background-color: #d46461;
+  border-radius: 10px;
+  border: 5px solid #2c2c2c;
+}
+
+.text-container h2 {
+  font-family: "Chivo Mono", monospace;
+  font-size: 2.3rem;
+  margin: 50px 25px;
+  padding: 10px 10px;
+}
+
+.text-container h3 {
+    margin-top: 75px;
+}
+
+.footer-container {
+  margin-top: 50px 50px;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer-container h3 {
+  color: #a50077;
+}
