@@ -49,7 +49,7 @@ h3 {
 }
 
 .text-container h3 {
-    margin-top: 75px;
+  margin-top: 100px;
 }
 
 .footer-container {
@@ -58,6 +58,14 @@ h3 {
   text-align: center;
 }
 
-.footer-container h3 {
+.footer-container h3 a{
   color: #a50077;
+  text-decoration: none;
+}
+
+.footer-container h3 a:hover{
+    padding: 10px;
+    font-size: 1.5rem;
+    border: 2px solid rgba(0, 0, 0, 0.089);
+    border-radius: 5px;
 }
