@@ -8,3 +8,46 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
 }
+
+.background-container {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image1 {
+  background-image: url(./img/bg1.jpg);
+  min-height: 100%;
+}
+
+.image2 {
+  background-image: url(./img/bg2.jpg);
+  min-height: 80%;
+}
+
+.image3 {
+  background-image: url(./img/bg3.jpg);
+  min-height: 80%;
+}
+
+.image4 {
+  background-image: url(./img/bg4.jpg);
+  min-height: 80%;
+}
+
+.image5 {
+  background-image: url(./img/bg5.jpg);
+  min-height: 80%;
+}
+
+.heading-container {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  color: white;
+}
