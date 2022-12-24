@@ -25,7 +25,7 @@ html {
 }
 
 .img1 {
-  background-image: url(./img/bg1.jpg);
+  background-image: url(./img/bg.jpg);
   min-height: 100%;
 }
 
@@ -45,7 +45,7 @@ html {
 }
 
 .img5 {
-  background-image: url(./img/bg5.jpg);
+  background-image: url(./img/bg.jpg);
   min-height: 80%;
 }
 
