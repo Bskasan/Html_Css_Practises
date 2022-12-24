@@ -1,183 +1,130 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@Bskasan 
-mdemirci571
-/
-parallax_webpage
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-parallax_webpage/style.css
-@mdemirci571
-mdemirci571 new file
-Latest commit 76202bc 52 minutes ago
- History
- 1 contributor
-140 lines (116 sloc)  2.69 KB
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
 
-
-body, html {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+body,
+html {
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.8rem;
   color: #666;
   height: 100%;
 }
 
-
-.background-container--img1,
-.background-container--img2,
-.background-container--img3,
-.background-container--img4,
-.background-container--img5 {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    opacity: 0.8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.background-container {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.background-container--img1 {
-    
-    background-image: url(./img/bg1.jpg);
-    min-height: 100%;
+.img1 {
+  background-image: url(./img/bg1.jpg);
+  min-height: 100%;
 }
 
-.background-container--img2 {
-    
-    background-image: url(./img/bg2.jpg);
-    min-height: 80%;
+.img2 {
+  background-image: url(./img/bg2.jpg);
+  min-height: 80%;
 }
 
-.background-container--img3 {
-    
-    background-image: url(./img/bg3.jpg);
-    min-height: 80%;
+.img3 {
+  background-image: url(./img/bg3.jpg);
+  min-height: 80%;
 }
 
-.background-container--img4 {
-    
-    background-image: url(./img/bg4.jpg);
-    min-height: 80%;
+.img4 {
+  background-image: url(./img/bg4.jpg);
+  min-height: 80%;
 }
 
-.background-container--img5 {
-    
-    background-image: url(./img/bg5.jpg);
-    min-height: 80%;
+.img5 {
+  background-image: url(./img/bg5.jpg);
+  min-height: 80%;
 }
 
-.heading-container{
-text-align: center;
-font-size: 3rem;
-letter-spacing: 0.5rem;
-color: white;
-
+.heading-container {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  color: white;
 }
+
 .heading-container__heading--logo {
-    width: 30%;
-    margin: 1rem;
-  }
-.heading-container__heading--big{
-    background-color: black;
-    outline-offset: 1rem;
-    outline: 0.5rem inset purple;
-    padding: 2rem;
-    border-top-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    line-height: 5rem;
-
+  width: 30%;
+  margin: 1rem;
+}
+.heading-container__heading--big {
+  background-color: black;
+  outline-offset: 1rem;
+  outline: 0.5rem inset purple;
+  padding: 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  line-height: 5rem;
 }
 
-.heading-container__heading--small{
-    background-color: black;
-    padding: 0.7rem;
-    border-top-left-radius: 0.7rem;
-    border-bottom-right-radius: 0.7rem;
-    outline-offset: 0.2rem;
-    outline: 0.4rem inset purple;
-    line-height: 5rem;
-
+.heading-container__heading--small {
+  background-color: black;
+  padding: 0.7rem;
+  border-top-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+  outline-offset: 0.2rem;
+  outline: 0.4rem inset purple;
+  line-height: 5rem;
 }
 
-.section{
-text-align: center;
-padding: 3rem 5rem;
+.section {
+  text-align: center;
+  padding: 3rem 5rem;
 }
 
-.section--light{
-    background-color: rgb(241, 241, 241);
-    color: #666;
+.section--light {
+  background-color: rgb(241, 241, 241);
+  color: #666;
 }
 
-.section--dark{
-background-color: #282e34;
+.section--dark {
+  background-color: #282e34;
   color: #ddd;
 }
 
 @media (max-width: 760px) {
-    .heading-container {
-      font-size: 2rem;
-    }
-    .heading-container__heading--big {
-      padding: 1rem;
-      border-top-left-radius: 1rem;
-      border-bottom-right-radius: 1rem;
-      outline: 0.4rem inset purple;
-      outline-offset: 0.6rem;
-      line-height: 2.5rem;
-    }
-    .heading-container__heading--small {
-      padding: 0.4rem;
-      border-top-left-radius: 0.3rem;
-      border-bottom-right-radius: 0.3rem;
-      outline: 0.2rem inset purple;
-      outline-offset: 0.1rem;
-      line-height: 2.4rem;
-    }
-    .section {
-      font-size: 0.9rem;
-    }
+  .heading-container {
+    font-size: 2rem;
   }
-  
-  @media (max-width: 568px) {
-    .background-container--image1,
-    .background-container--image2,
-    .background-container--image3,
-    .background-container--image4 {
-      background-attachment: scroll;
-    }
+  .heading-container__heading--big {
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    outline: 0.4rem inset purple;
+    outline-offset: 0.6rem;
+    line-height: 2.5rem;
   }
-  
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-parallax_webpage/style.css at main · mdemirci571/parallax_webpage
+  .heading-container__heading--small {
+    padding: 0.4rem;
+    border-top-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    outline: 0.2rem inset purple;
+    outline-offset: 0.1rem;
+    line-height: 2.4rem;
+  }
+  .section {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .background-container--image1,
+  .background-container--image2,
+  .background-container--image3,
+  .background-container--image4 {
+    background-attachment: scroll;
+  }
+}
