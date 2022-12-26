@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  height: 100%;
+} */
+
+/* Don't use html to provide cleaner code. */
+body {
+  height: 100vh;
+}
+
+.div1 {
+  background-color: green;
+  width: 50%; /* 50% of the body */
+  max-width: 600px;
+  height: 50%;
+  /* * it doesn't work, because the body doesn't have default height value. */
+}
+
+.div2 {
+  background-color: tomato;
+  width: 50%; /* 50% of the div1 */
+  height: 20vh;
+}
+
+.div3 {
+  background-color: magenta;
+  /* width: 50%; /* 50% of the div2 */
+  /* it doesn't have max-width */
+  width: 50vw;
+  /* ? ViewPort which depends on the browser not parent, it might be same as % but not always. */
+  /* ? Vw birimi dogrudan tarayicinin gorunebilir uzunluguna baglidir. Yani parenta bagli degildir. */
+  height: 30%;
+}
