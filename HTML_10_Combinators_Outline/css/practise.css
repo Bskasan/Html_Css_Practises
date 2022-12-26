@@ -64,11 +64,23 @@ nav.sticky-nav a {
 
 nav.sticky-nav a:hover {
   color: white;
-  text-decoration: underline;
+  border: 3px solid white;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 /* ! NAV - BANNER */
 /* ! ----------------------------------- ! */
 
 nav.banner-nav {
+  position: relative;
+}
+
+nav.banner-nav img {
+  width: 100%;
+  max-height: calc(100vh - 215px);
+}
+
+nav.banner-nav .hero {
+  position: absolute;
 }
