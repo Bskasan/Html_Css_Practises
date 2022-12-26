@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0.5rem;
+}
+
+/** Descendant Selector */
+/*! All p elements inside of the box class*/
+.box p {
+  color: red;
+}
+
+/** Child Selector */
+/*! p elements which have parent named box */
+.box > p {
+  color: blue;
+}
+
+.box > h1 {
+  color: purple;
+}
+
+/* * General Child Selector */
+/* ! All p elements after the 'box' div has been closed. */
+/* ! NOT: Kapanan div ile ayni parent a sahip olan tum p leri secer */
+.box ~ p {
+  color: green;
+}
+
+/* * Adjacent Sibling Selector */
+/* ! The first element after the box has been closed. */
+.box + p {
+  color: fuchsia;
+}
