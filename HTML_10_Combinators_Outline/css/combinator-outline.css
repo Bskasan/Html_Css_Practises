@@ -31,3 +31,22 @@
 .box + p {
   color: fuchsia;
 }
+
+/* ? P elementinden sonraki ilk h1 */
+/* ? Block elementlere vertical-align kullanamazsiniz */
+p + h1 {
+  font-size: 1rem;
+  margin: 3rem;
+  width: 8rem;
+  height: 8rem;
+  border: 2px solid red;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 3.3rem;
+}
+
+p + h1:hover {
+  outline: 3px solid purple;
+  /* outline-style: double; */
+  outline-offset: 3px;
+}
