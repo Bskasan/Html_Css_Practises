@@ -7,7 +7,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-family: "DynaPuff", cursive;
+  /* font-family: "DynaPuff", cursive; */
 }
 
 /* ! HEADER */
@@ -52,6 +52,9 @@ nav.sticky-nav {
     #ffcc70 100%
   );
   text-align: center;
+  position: sticky;
+  top: 0rem;
+  z-index: 1;
 }
 
 nav.sticky-nav a {
@@ -82,5 +85,68 @@ nav.banner-nav img {
 }
 
 nav.banner-nav .hero {
+  font-family: "Open Sans", sans-serif;
   position: absolute;
+  top: 40%;
+  left: 15%;
+}
+
+nav.banner-nav .hero h2 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  text-shadow: 0px 2px 4px black;
+}
+
+nav.banner-nav .hero h3 {
+  color: red;
+  font-size: 1.5rem;
+  text-shadow: 0px 2px 4px grey;
+  margin-bottom: 1rem;
+}
+
+nav.banner-nav button {
+  font-family: "Open Sans", sans-serif;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #d9afd9;
+  font-weight: 700;
+}
+
+nav.banner-nav button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+
+/* ! MAIN */
+/* ! ----------------------------------- ! */
+
+main{
+    padding: 2rem;
+    text-align: justify;
+}
+
+/* ! SLACK ICON */
+/* ! ----------------------------------- ! */
+
+.slack-icon{
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    font-size: 2rem;
+    background-color: red;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 0.16rem;
+}
+
+.slack-icon:hover{
+    cursor: pointer;
+    outline: 2px solid black;
+    outline-offset: 3px;
 }
