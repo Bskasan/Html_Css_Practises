@@ -5,21 +5,51 @@
   padding: 0;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "DynaPuff", cursive;
+}
+
 /* ! HEADER */
 /* ! ----------------------------------- ! */
 header {
-  background-color: #4158d0;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  padding: 1rem;
 }
 header a img {
   width: 70px;
 }
 
 header .sign-in {
+  color: #c852bd;
   float: right;
+  padding-top: 1.7rem;
+  padding-right: 0.5rem;
+}
+
+header .sign-in a {
+  color: #c852bd;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+header .sign-in a:hover {
+  border-bottom: 3px solid #c852bd;
+}
+
+/* ! NAV - STICKY */
+/* ! ----------------------------------- ! */
+
+nav.sticky-nav{
+
+}
+
+
+/* ! NAV - BANNER */
+/* ! ----------------------------------- ! */
+
+nav.banner-nav{
+    
 }
