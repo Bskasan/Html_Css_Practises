@@ -1,0 +1,13 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ! HEADER */
+/* ! ----------------------------------- ! */
+
+header a img {
+    width: 70px;
+}
