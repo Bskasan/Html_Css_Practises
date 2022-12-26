@@ -25,7 +25,3 @@ console.log(calculator(8, 2, mul));
 console.log(calculator(8, 2, pow));
 
 // ------------------------------------------------- //
-
-function testing2 (){
-    
-}
