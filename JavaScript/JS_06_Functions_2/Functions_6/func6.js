@@ -1,8 +1,8 @@
-const testing = function () {
+const testing1 = function () {
   console.log("Here I am...");
 };
 
-testing();
+testing1();
 
 // -- Higher Order and Callback Functions --//
 
@@ -25,3 +25,8 @@ console.log(calculator(8, 2, mul));
 console.log(calculator(8, 2, pow));
 
 // ------------------------------------------------- //
+// Immediately Invoked Function Expression
+// IIFE override default value of parameter.
+const testing = ((me = 'Developer') => `Here is ${me}...`)('Admin');
+
+console.log(testing);
