@@ -1,0 +1,38 @@
+.word {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem auto;
+  width: 50vw;
+}
+
+/***************** TRANSFORM - ROTATE ********************/
+
+/* You need to give value named 'deg' for rotate*/
+/* rotate içinde ... degree (deg) olarak değer verilir */
+/* 90 ve 270 deerelecelerde yazılar tam dik olduklarından ve 
+    3 boyutlu olarak bakamadığımız için gözükmezler */
+.word1 {
+  background-color: chocolate;
+  transform: rotateX(180deg);
+}
+
+.word2 {
+  background-color: crimson;
+  transform: rotateY(180deg);
+}
+
+.word3 {
+  background-color: greenyellow;
+  transform: rotate(-20deg);
+  transform-origin: left center;/* Soldaki kenarin merkezi */
+}
+
+/***************** TRANSFORM - SCALE ********************/
+
+.word4{
+    
+}
+
+img {
+  transform: rotate(20deg);
+}
