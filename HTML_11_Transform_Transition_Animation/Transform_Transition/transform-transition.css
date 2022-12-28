@@ -1,62 +1,53 @@
-.word {
+.yazi {
   text-align: center;
   font-size: 2rem;
   margin: 2rem auto;
   width: 50vw;
 }
 
-/***************** TRANSFORM - ROTATE ********************/
-
-/* You need to give value named 'deg' for rotate*/
+/* ******** TRANSFORM-ROTATE ************ */
 /* rotate içinde ... degree (deg) olarak değer verilir */
 /* 90 ve 270 deerelecelerde yazılar tam dik olduklarından ve 
-    3 boyutlu olarak bakamadığımız için gözükmezler */
-.word1 {
+      3 boyutlu olarak bakamadığımız için gözükmezler */
+.yazi1 {
   background-color: chocolate;
   transform: rotateX(180deg);
 }
-
-.word2 {
+.yazi2 {
   background-color: crimson;
   transform: rotateY(180deg);
 }
-
-.word3 {
+.yazi3 {
   background-color: greenyellow;
-  transform: rotate(-20deg);
-  transform-origin: left center; /* Soldaki kenarin merkezi */
+  transform: rotate(-30deg);
+  transform-origin: left center;
 }
 
-/***************** TRANSFORM - SCALE ********************/
-
-.word4 {
+/* ******** TRANSFORM-SCALE ************ */
+/* scale boyutlandırma için kullanılır */
+.yazi4 {
   background-color: indianred;
   transform: scaleX(1.5);
 }
 
-.word5 {
+.yazi5 {
   background-color: cornflowerblue;
-  transform: scaleY(1.2);
+  transform: scaleY(2);
 }
 
-.word5:hover {
-  transform: scaleY(2.5);
-}
-
-.word6 {
+.yazi6 {
   background-color: darkgreen;
 }
-
-/* .word6:hover{
-    transform: scale(2) rotate(60deg);
-    
-} */
+/* 
+  .yazi6:hover {
+    transform: scale(2) rotate(60deg); 
+  } */
 
 img {
-  transform: rotate(20deg);
+  transform: rotate(0deg);
 }
 
-/***************** TRANSFORM - TRANSLATE ********************/
+/* ************* -TRANSFORM- TRANSLATE ********* */
 /* Translate öteleme,hareket ettirmek için kullanılır. */
 
 .box {
@@ -64,71 +55,53 @@ img {
   width: 100px;
   font-weight: 800;
   height: 50px;
+
+  /* transition-property: width;
+      transition-duration:2s;
+      transition-delay: 2s;
+      transition-timing-function: ease; */
+
+  /* shorthand */
+  /* transition: background-color 3s, width 3s,height 3s; */
+  transition: all 2s ease-in-out 1s;
 }
 
-.X:hover {
-  transform: translateX(50px);
+/* .X:hover{
+      /* transform: translateX(50px);
+      width: 200px;
+      height: 200px;
+      background-color: cadetblue;
+      color:white;
+    
+  }
+  
+  .Y{
+      transform: translateY(150px);
+  }
+  .XY{
+      transform:translate(100px,50px)
+  }
+  
+  .XY:active{
+   transform: translate(-50px,40px)
+  } */
+
+.btn-div {
+  text-align: center;
 }
 
-.Y {
-  transform: translateY(150px);
+.btn {
+  background-color: rgb(8, 129, 170);
+  border: 2px solid gray;
+  padding: 20px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  transition: background-color 3s cubic-bezier(0, 1.09, 1, 0.11), color 1s;
 }
 
-.XY {
-  transform: translate(100px, 50px);
-}
-
-/* .XY:active {
-  transform: translate(50px, 50px);
-} */
-
-/***************** TRANSFORM - TRANSITION ********************/
-.transition {
-  width: 100px;
-  font-weight: 800;
-  height: 50px;
-  margin-bottom: 10px;
-
-  transition-property: width;
-  transition-duration: 2s;
-  transition-delay: 1s;
-  transition-timing-function: ease;
-
-  /* transition: background-color 3s, width 3s, height 3s; */
-  /* transition: all 2s ease-in-out 1s; */
-}
-
-.t1 {
-  background-color: crimson;
-}
-
-.t1:hover {
-  background-color: cadetblue;
-}
-
-.t2 {
-  background-color: brown;
-}
-
-.t2:hover {
-  height: 200px;
+.btn:hover {
+  background-color: rgb(225, 31, 13);
+  border-radius: 25px;
   width: 200px;
-}
-
-.t3 {
-  background-color: green;
-}
-.t3:active {
-  background-color: rebeccapurple;
   color: white;
-  width: 200px;
-  height: 200px;
-}
-
-.t4 {
-  background-color: yellow;
-}
-
-.t5 {
-  background-color: blueviolet;
 }
