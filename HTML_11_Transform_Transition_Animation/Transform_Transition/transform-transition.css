@@ -30,9 +30,31 @@
 /***************** TRANSFORM - SCALE ********************/
 
 .word4{
+    background-color: indianred;
+    transform: scaleX(1.5);
+}
+
+.word5{
+    background-color: cornflowerblue;
+    transform: scaleY(1.2);
+}
+
+.word5:hover{
+    transform: scaleY(2.5);
+}
+
+.word6{
+    background-color: darkgreen;
+}
+
+.word6:hover{
+    transform: scale(2) rotate(60deg);
     
 }
 
 img {
   transform: rotate(20deg);
 }
+
+/***************** TRANSFORM - TRANSLATE ********************/
+/* Translate öteleme,hareket ettirmek için kullanılır. */
