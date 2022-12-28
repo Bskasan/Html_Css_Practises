@@ -66,7 +66,7 @@ img {
   height: 50px;
 }
 
-.X {
+.X:hover {
   transform: translateX(50px);
 }
 
@@ -81,3 +81,54 @@ img {
 /* .XY:active {
   transform: translate(50px, 50px);
 } */
+
+/***************** TRANSFORM - TRANSITION ********************/
+.transition {
+  width: 100px;
+  font-weight: 800;
+  height: 50px;
+  margin-bottom: 10px;
+
+  transition-property: width;
+  transition-duration: 2s;
+  transition-delay: 1s;
+  transition-timing-function: ease;
+
+  /* transition: background-color 3s, width 3s, height 3s; */
+  /* transition: all 2s ease-in-out 1s; */
+}
+
+.t1 {
+  background-color: crimson;
+}
+
+.t1:hover {
+  background-color: cadetblue;
+}
+
+.t2 {
+  background-color: brown;
+}
+
+.t2:hover {
+  height: 200px;
+  width: 200px;
+}
+
+.t3 {
+  background-color: green;
+}
+.t3:active {
+  background-color: rebeccapurple;
+  color: white;
+  width: 200px;
+  height: 200px;
+}
+
+.t4 {
+  background-color: yellow;
+}
+
+.t5 {
+  background-color: blueviolet;
+}
