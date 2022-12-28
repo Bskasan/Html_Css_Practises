@@ -24,33 +24,33 @@
 .word3 {
   background-color: greenyellow;
   transform: rotate(-20deg);
-  transform-origin: left center;/* Soldaki kenarin merkezi */
+  transform-origin: left center; /* Soldaki kenarin merkezi */
 }
 
 /***************** TRANSFORM - SCALE ********************/
 
-.word4{
-    background-color: indianred;
-    transform: scaleX(1.5);
+.word4 {
+  background-color: indianred;
+  transform: scaleX(1.5);
 }
 
-.word5{
-    background-color: cornflowerblue;
-    transform: scaleY(1.2);
+.word5 {
+  background-color: cornflowerblue;
+  transform: scaleY(1.2);
 }
 
-.word5:hover{
-    transform: scaleY(2.5);
+.word5:hover {
+  transform: scaleY(2.5);
 }
 
-.word6{
-    background-color: darkgreen;
+.word6 {
+  background-color: darkgreen;
 }
 
-.word6:hover{
+/* .word6:hover{
     transform: scale(2) rotate(60deg);
     
-}
+} */
 
 img {
   transform: rotate(20deg);
@@ -58,3 +58,26 @@ img {
 
 /***************** TRANSFORM - TRANSLATE ********************/
 /* Translate öteleme,hareket ettirmek için kullanılır. */
+
+.box {
+  background-color: crimson;
+  width: 100px;
+  font-weight: 800;
+  height: 50px;
+}
+
+.X {
+  transform: translateX(50px);
+}
+
+.Y {
+  transform: translateY(150px);
+}
+
+.XY {
+  transform: translate(100px, 50px);
+}
+
+/* .XY:active {
+  transform: translate(50px, 50px);
+} */
