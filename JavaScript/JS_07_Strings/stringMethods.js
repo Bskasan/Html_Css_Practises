@@ -33,11 +33,21 @@ console.log(str1.concat(str2)); // Property for Concatenation.
 console.log(" *** Index *** ");
 console.log(" *** *************** *** ");
 
-let strIndex = "Hello World";
+let strIndex = "I am Bekir";
+const strIndex2 = "Hello Bekir, How are you?";
 
 console.log(strIndex[1]);
 console.log(strIndex[5]);
-console.log(strIndex[10]);
+//console.log(strIndex[10]); // undefined for I am Bekir.
+console.log(strIndex2[strIndex2.length - 1]);
+
+for (let i = 0; i < strIndex.length; i++) {
+  console.log(strIndex[i], i);
+}
+console.log(" *** *************** *** ");
+for(let i = strIndex.length - 1; i >= 0; i--){
+    console.log(strIndex[i], i);
+}
 
 //INVALID
 //console.log(strIndex[-1]); // undefined
