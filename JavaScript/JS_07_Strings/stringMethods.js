@@ -88,7 +88,12 @@ console.log(nameAll.slice(5));
 //----------substring() method----------//
 
 let cw = "Clarusway";
+let cw1 = "Full";
+let cw2 = "Stack"
 
 console.log(cw.substring(1, 5));
 console.log(cw.substring(5, 1));
 
+//----------concat() method----------//
+
+console.log(cw.concat(" " + cw1 + " " + cw2));
