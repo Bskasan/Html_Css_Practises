@@ -149,15 +149,22 @@ console.log(quote.search(/know/i)); // i means not case sensitive.
 let newQuote = quote.replace("know", "find");
 //let newQuote2 = quote.replace(/know/i, "find");
 //let newQuote2 = quote.replace(/know/g, "find");
-let newQuote2 = quote.replace(/know/ig, "find");
+let newQuote2 = quote.replace(/know/gi, "find");
 //let newQuote3 = quote.replace("know", "find");
 
 console.log(newQuote2);
 
 //split
-let welcome = "Welcome to the Clarusway.";
+let welcome = "    Welcome to the Clarusway.   ";
 
 console.log(welcome.split()); // No Separator
-console.log(welcome.split('')); // letter by letter array
-console.log(welcome.split(' ')); // word by word array
-console.log(welcome.split(','));
+console.log(welcome.split("")); // letter by letter array
+console.log(welcome.split(" ")); // word by word array
+console.log(welcome.split(","));
+
+//to lower Case and uppercase
+console.log(welcome.toLowerCase());
+console.log(welcome.toUpperCase());
+
+//trim
+console.log(welcome.trim());
