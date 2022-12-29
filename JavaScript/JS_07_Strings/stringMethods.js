@@ -83,3 +83,12 @@ let surname2 = nameAll.slice(-8, -2);
 console.log(nameAll);
 console.log(surname);
 console.log(surname2);
+console.log(nameAll.slice(5));
+
+//----------substring() method----------//
+
+let cw = "Clarusway";
+
+console.log(cw.substring(1, 5));
+console.log(cw.substring(5, 1));
+
