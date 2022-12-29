@@ -29,3 +29,16 @@ console.log(str4.length); // Concatenation
 console.log(str1.concat(str2)); // Property for Concatenation.
 
 //---------------------------------//
+
+console.log(" *** Index *** ");
+console.log(" *** *************** *** ");
+
+let strIndex = "Hello World";
+
+console.log(strIndex[1]);
+console.log(strIndex[5]);
+console.log(strIndex[10]);
+
+//INVALID
+//console.log(strIndex[-1]); // undefined
+//console.log(strIndex[20]); // undefined
