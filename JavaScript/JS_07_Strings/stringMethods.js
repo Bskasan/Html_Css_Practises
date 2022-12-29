@@ -89,11 +89,18 @@ console.log(nameAll.slice(5));
 
 let cw = "Clarusway";
 let cw1 = "Full";
-let cw2 = "Stack"
+let cw2 = "Stack";
 
 console.log(cw.substring(1, 5));
 console.log(cw.substring(5, 1));
 
 //----------concat() method----------//
 
-console.log(cw.concat(" " + cw1 + " " + cw2));
+console.log(cw.concat(" Cohort 13 " + cw1 + " JS Session 8 " + cw2));
+
+//----------includes() method----------//
+
+let myName = "Bekir Sadik Kasan";
+
+console.log(myName.includes("Sadik")); // true
+console.log(myName.includes("sadik")); // false
