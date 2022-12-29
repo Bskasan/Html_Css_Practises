@@ -45,8 +45,8 @@ for (let i = 0; i < strIndex.length; i++) {
   console.log(strIndex[i], i);
 }
 console.log(" *** *************** *** ");
-for(let i = strIndex.length - 1; i >= 0; i--){
-    console.log(strIndex[i], i);
+for (let i = strIndex.length - 1; i >= 0; i--) {
+  console.log(strIndex[i], i);
 }
 
 //INVALID
@@ -58,14 +58,28 @@ console.log(" *** ********************* *** ");
 
 let a = 10;
 let b = a;
-console.log({a}, {b});
+console.log({ a }, { b });
 a = 12;
-console.log({a}, {b});
+console.log({ a }, { b });
 
 console.log(" *** Escape Sequences *** ");
 console.log(" *** ********************* *** ");
 
 console.log(" Hello \t World!");
 console.log(" Hello \n World!");
-console.log(" Hello Bekir\'s World!");
+console.log(" Hello Bekir's World!");
 console.log(" Hello \\ World!");
+
+console.log(" *** String Methods *** ");
+console.log(" *** ********************* *** ");
+
+//----------slice() method----------//
+// Positive numbers start from 0.
+// Negative values start from -1.
+let nameAll = "Bekir Kasan";
+let surname = nameAll.slice(6, 11);
+let surname2 = nameAll.slice(-8, -2);
+
+console.log(nameAll);
+console.log(surname);
+console.log(surname2);
