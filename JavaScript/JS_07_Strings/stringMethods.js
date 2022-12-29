@@ -131,20 +131,27 @@ let emailInput = "bekir.kasan@claruswa@y.com";
 console.log(emailInput.indexOf("@"));
 console.log(emailInput.indexOf(".com", emailInput.indexOf("@")));
 
-
 console.log(" *** ********************* *** ");
 console.log(" *** ********************* *** ");
 
-let quote = 'You do not KNOW what you do not know until you know.';
+let quote = "You do not KNOW what you do not know until you know.";
 
 //lastIndexOf searches from right to the left and returns the index number of the first found value in the string.
-console.log(quote.lastIndexOf('t'));
-console.log(quote.lastIndexOf('t', 38));
+console.log(quote.lastIndexOf("t"));
+console.log(quote.lastIndexOf("t", 38));
 //search
-console.log(quote.search('know'));
-console.log(quote.search('KNOW'));
-console.log(quote.search(/know/));  // with regular expression.
+console.log(quote.search("know"));
+console.log(quote.search("KNOW"));
+console.log(quote.search(/know/)); // with regular expression.
 console.log(quote.search(/know/i)); // i means not case sensitive.
 
+//replace method
+let newQuote = quote.replace("know", "find");
+//let newQuote2 = quote.replace(/know/i, "find");
+//let newQuote2 = quote.replace(/know/g, "find");
+let newQuote2 = quote.replace(/know/ig, "find");
+//let newQuote3 = quote.replace("know", "find");
 
+console.log(newQuote2);
 
+//
