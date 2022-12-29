@@ -105,6 +105,8 @@ let email = "b.kasan@hotmail.com";
 
 console.log(myName.includes("Sadik")); // true
 console.log(myName.includes("sadik")); // false
+
+// Checking the email is valid or not.
 if (email.includes("@")) {
   console.log("Email is valid!");
 } else {
@@ -115,3 +117,16 @@ if (email.includes("@")) {
 
 console.log(myName.indexOf("Kasan")); // returns 12
 console.log(myName.indexOf("kasan")); // returns -1
+
+// Checking the email is valid or not.
+if (email.indexOf("@") !== -1) {
+  console.log("Email is valid!");
+} else {
+  console.log("!!!Invalid Email!!!");
+}
+
+//-----------Practise---------//
+
+let emailInput = "bekir.kasan@claruswa@y.com";
+console.log(emailInput.indexOf("@"));
+console.log(emailInput.indexOf(".com", emailInput.indexOf("@")));
