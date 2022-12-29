@@ -154,4 +154,10 @@ let newQuote2 = quote.replace(/know/ig, "find");
 
 console.log(newQuote2);
 
-//
+//split
+let welcome = "Welcome to the Clarusway.";
+
+console.log(welcome.split()); // No Separator
+console.log(welcome.split('')); // letter by letter array
+console.log(welcome.split(' ')); // word by word array
+console.log(welcome.split(','));
