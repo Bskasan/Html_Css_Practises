@@ -61,3 +61,11 @@ let b = a;
 console.log({a}, {b});
 a = 12;
 console.log({a}, {b});
+
+console.log(" *** Escape Sequences *** ");
+console.log(" *** ********************* *** ");
+
+console.log(" Hello \t World!");
+console.log(" Hello \n World!");
+console.log(" Hello Bekir\'s World!");
+console.log(" Hello \\ World!");
