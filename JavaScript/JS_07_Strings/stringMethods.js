@@ -101,6 +101,17 @@ console.log(cw.concat(" Cohort 13 " + cw1 + " JS Session 8 " + cw2));
 //----------includes() method----------//
 
 let myName = "Bekir Sadik Kasan";
+let email = "b.kasan@hotmail.com";
 
 console.log(myName.includes("Sadik")); // true
 console.log(myName.includes("sadik")); // false
+if (email.includes("@")) {
+  console.log("Email is valid!");
+} else {
+  console.log("!!!Invalid Email!!!");
+}
+
+//----------indexOf() method----------//
+
+console.log(myName.indexOf("Kasan")); // returns 12
+console.log(myName.indexOf("kasan")); // returns -1
