@@ -52,3 +52,12 @@ for(let i = strIndex.length - 1; i >= 0; i--){
 //INVALID
 //console.log(strIndex[-1]); // undefined
 //console.log(strIndex[20]); // undefined
+
+console.log(" *** Strings Are Immutable *** ");
+console.log(" *** ********************* *** ");
+
+let a = 10;
+let b = a;
+console.log({a}, {b});
+a = 12;
+console.log({a}, {b});
