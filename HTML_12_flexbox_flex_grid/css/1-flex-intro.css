@@ -43,4 +43,14 @@ ul {
 ul li {
   background-color: tomato;
   width: 6rem;
+  padding: 0.5rem;
+  color: white;
 }
+
+ul li:hover{
+    /* flex-grow: 0.05; */
+    flex-basis: 10%;
+    cursor: pointer;
+}
+
+
