@@ -1,92 +1,147 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  padding: 2rem;
-}
-
-ul {
-  list-style-type: none;
-  background-color: antiquewhite;
-  padding: 1rem;
-  /*height: 20rem;*/ /*? Dikey hizalamayi gostermek icin eklendi*/
-
-  display: flex;
-
-  /*! Elemanların dizilis yonu : column, row, row-reverse, column-reverse*/
-  flex-direction: row;
-  /*? gap, flex icerisindeki elemanlarin dikey ve yatay bosluklarini belirlemek icin kullanilabilir.
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    padding: 2rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    background-color: antiquewhite;
+    padding: 1rem;
+    /*height: 20rem;*/ /*? Dikey hizalamayi gostermek icin eklendi*/
+  
+    display: flex;
+  
+    /*! Elemanların dizilis yonu : column, row, row-reverse, column-reverse*/
+    flex-direction: row;
+    /*? gap, flex icerisindeki elemanlarin dikey ve yatay bosluklarini belirlemek icin kullanilabilir.
     //*? ilk yazilan yatay (satilar arasi) bosluk, 2. yazilan ise dikey (sutunlar arasi) bosluktur */
-  gap: 1rem 0.5rem;
-
-  /*? sikistirma veya alt satira gecebilme:flex-wrap: wrap, nowrap, wrap-reverse*/
-  flex-wrap: wrap;
-
-  /*? Yazilari hizalamak icin */
-  text-align: center;
-
-  /*! Yatay Hizalama: justify-content
+    gap: 1rem 0.5rem;
+  
+    /*? sikistirma veya alt satira gecebilme:flex-wrap: wrap, nowrap, wrap-reverse*/
+    flex-wrap: wrap;
+  
+    /*? Yazilari hizalamak icin */
+    text-align: center;
+  
+    /*! Yatay Hizalama: justify-content
     /** flex-start, flex-end,center, space-around,space-evenly, space-between*/
-  justify-content: center;
-
-  /*! Dikey Hizalama => align-items
+    justify-content: center;
+  
+    /*! Dikey Hizalama => align-items
     /**  flex-start, flex-end,center, stretch,baseline */
-  align-items: flex-start;
-
-  /*! Cok satirli verilerin dikeyde hizalanmasi icin kullanilir*/
-  /* align-content: flex-start; */
-}
-
-ul li {
-  background-color: tomato;
-  width: 6rem;
-  padding: 0.5rem;
-  color: white;
-}
-
-ul li:hover {
-  /* flex-grow: 0.05; */
-  flex-basis: 10%;
-  cursor: pointer;
-}
-
-/** FLEX-GROW // FLEX-BASIS */
-
-.container {
-  background-color: aquamarine;
-  padding: 1rem;
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.3rem;
-  flex-wrap: wrap;
-}
-
-.container * {
-  background-color: hotpink;
-}
-
-.container header {
+    align-items: flex-start;
+  
+    /*! Cok satirli verilerin dikeyde hizalanmasi icin kullanilir*/
+    /* align-content: flex-start; */
+  }
+  
+  ul li {
+    background-color: tomato;
+    width: 6rem;
+    padding: 0.5rem;
+    color: white;
+  }
+  
+  /** FLEX-GROW, FLEX-BASIS */
+  .container {
+    background-color: aquamarine;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  
+  .container * {
+    background-color: hotpink;
+  }
+  .container header {
     flex-basis: 100%;
-    
-}
-
-.container .left {
+  
+    /*? Alternatif olarak */
+    /*! flex uc deger alabilir => flex-grow,  flex-shrink, flex-basis */
+    flex: 1 1 100%; /*?  flex-grow: 1,  flex-shrink:1 ve flex-basis: 100%; */
+    /*? Yani buyume katsayisi 1 kat, kuculme katsayi 1 kat*/
+    /*? flex-basis 100% oldugu icin tum satiri kapsar */
+  
+    flex: 1 100%;
+    /** Flex 2 degerli de yazilabilir. Bu durumda:
+   /** İlk deger flex-grow 2.si ise flex-basis degeri olur.*/
+  }
+  
+  .container .left {
+    flex-grow: 2;
+  
+    /*! Birimsiz tek deger varsa bu flex-grow degeri olur.
+    /*! Bu durumda flex-basis 0' a esittir */
+    /*? flex-grow: 2,   flex-basis:0 */
+    flex: 2; /** left digerlerine gore 2 kat daha fazla buyuyebilir.*/
+  }
+  
+  .container .right {
     flex-grow: 1;
-}
-
-.container .right {
-    flex-grow: 1;
-}
-
-.container main {
+  
+    /*? flex-grow: 1,   flex-basis:0 */
+    /*? border-right-color: ; 1 kat buyur */
+    flex: 1;
+  }
+  
+  .container main {
     flex-grow: 3;
-}
-
-.container footer {
+  
+    /*? flex-grow: 3,   flex-basis:0 */
+    flex: 3; /** main digerlerine gore 3 kat daha fazla buyuyebilir.*/
+  }
+  
+  .container footer {
+    flex-basis: 100%;
+  
+    /*? Birimli tek bir deger varsa bu flex-basis olcusudur (width/height) */
     flex: 100%;
-}
+  }
+  
+  /** FLEX-GROW, FLEX-BASIS (ALTERNATIVE)*/
+  .container1 {
+    background-color: beige;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  
+  .container1 * {
+    background-color: tomato;
+  }
+  .container1 header {
+    width: 100%;
+  }
+  
+  .container1 .left {
+    /* width: 33.333%; */
+    width: calc(33.33% - calc(2rem / 3));
+  }
+  
+  .container1 .right {
+    /* width: 16.666%; */
+    width: calc(16.66% - calc(2rem / 3));
+  }
+  
+  .container1 main {
+    /* width: 49.998%; */
+    width: calc(49.98% - calc(2rem / 3));
+  }
+  
+  .container1 footer {
+    width: 100%;
+  }
+  
