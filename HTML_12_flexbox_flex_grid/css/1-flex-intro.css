@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  background-color: antiquewhite;
+  padding: 1rem;
+  /*height: 20rem;*/ /*? Dikey hizalamayi gostermek icin eklendi*/
+
+  display: flex;
+
+  /*! Elemanların dizilis yonu : column, row, row-reverse, column-reverse*/
+  flex-direction: row;
+  /*? gap, flex icerisindeki elemanlarin dikey ve yatay bosluklarini belirlemek icin kullanilabilir.
+    //*? ilk yazilan yatay (satilar arasi) bosluk, 2. yazilan ise dikey (sutunlar arasi) bosluktur */
+  gap: 1rem 0.5rem;
+
+  /*? sikistirma veya alt satira gecebilme:flex-wrap: wrap, nowrap, wrap-reverse*/
+  flex-wrap: wrap;
+
+  /*? Yazilari hizalamak icin */
+  text-align: center;
+
+  /*! Yatay Hizalama: justify-content
+    /** flex-start, flex-end,center, space-around,space-evenly, space-between*/
+  justify-content: center;
+
+  /*! Dikey Hizalama => align-items
+    /**  flex-start, flex-end,center, stretch,baseline */
+  align-items: flex-start;
+
+  /*! Cok satirli verilerin dikeyde hizalanmasi icin kullanilir*/
+  /* align-content: flex-start; */
+}
+
+ul li {
+  background-color: tomato;
+  width: 6rem;
+}
