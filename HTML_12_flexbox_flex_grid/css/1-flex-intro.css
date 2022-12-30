@@ -47,10 +47,46 @@ ul li {
   color: white;
 }
 
-ul li:hover{
-    /* flex-grow: 0.05; */
-    flex-basis: 10%;
-    cursor: pointer;
+ul li:hover {
+  /* flex-grow: 0.05; */
+  flex-basis: 10%;
+  cursor: pointer;
 }
 
+/** FLEX-GROW // FLEX-BASIS */
 
+.container {
+  background-color: aquamarine;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.3rem;
+  flex-wrap: wrap;
+}
+
+.container * {
+  background-color: hotpink;
+}
+
+.container header {
+    flex-basis: 100%;
+    
+}
+
+.container .left {
+    flex-grow: 1;
+}
+
+.container .right {
+    flex-grow: 1;
+}
+
+.container main {
+    flex-grow: 3;
+}
+
+.container footer {
+    flex: 100%;
+}
