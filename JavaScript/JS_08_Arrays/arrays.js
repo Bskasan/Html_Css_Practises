@@ -87,8 +87,28 @@ const people = [
 ];
 
 console.log(people);
-console.log(++people[4][1])
+console.log(++people[4][1]);
 console.log(ageArr);
 
+// * Methods Which Can Change the Array / Mutator * //
+
+// ? pop() method is used to remove the last element of Array and returns the element which is removed.
+const cars = ["BMW", "Mercedes", "Fiat", "Anadol"];
+console.log(cars.pop());
+console.log(cars);
+
+// ? push() method is used to add an element to the end of the array and returns to the number of the last element of an array.
+console.log(cars.push("Lexus"));
+console.log(cars)
+
+// * ---------------------------------------- *//
+
+// * Immutator Methods * //
+
+// * ---------------------------------------- *//
+
+// * Iteration - Arrays * //
+
+// * ---------------------------------------- *//
 
 // * ---------------------------------------- *//
