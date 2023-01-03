@@ -58,16 +58,37 @@ console.log(numbers2);
 // * ---------------------------------------- *//
 // * ---------------------------------------- *//
 
-
 // ? Dizilere erisirken index yani sira numarasi kullanilir.
 // ? We use index numbers to access of the values of Array.
-console.log(names[1])// Micheal
+console.log(names[1]); // Micheal
 const micheal = names[1];
 console.log(micheal);
 
 const names1 = ["Emir", "Mahmut", "Bekir", "Jonathan"];
 // const lastEl = names1[3]; -> Hard-coded.
-const lastEl = names1[names1.length - 1]; 
+const lastEl = names1[names1.length - 1];
 console.log(lastEl);
+// ? at() method to access last index.
+console.log(names1.at(-1));
+
+// names1[2] = "bekir";
+names1[2] = names1[2].toUpperCase();
+// * You can use uppercase when you assign it to the variable which you want to access to change.
+console.log(names1);
+
+// ? Arrays can have different variable type, data types.
+const ageArr = [22, 44, 50];
+const people = [
+  "John",
+  "Varmont",
+  new Date().getFullYear() - 1990,
+  true,
+  ageArr,
+];
+
+console.log(people);
+console.log(++people[4][1])
+console.log(ageArr);
+
 
 // * ---------------------------------------- *//
