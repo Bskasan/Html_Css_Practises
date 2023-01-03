@@ -101,6 +101,44 @@ console.log(cars);
 console.log(cars.push("Lexus"));
 console.log(cars)
 
+// ? unshift() method is used to add an element to the 0th element of an array and returns to the number of the last element of an array.
+console.log(cars.unshift("Togg"));
+console.log(cars);
+
+// ? shift() method is used to remove 0th element and returns the number of removed one.
+console.log(cars.shift());
+console.log(cars);
+
+// ? splice() method;
+// ? 1. parameter : index number of an element to add / eklenecek index numarasi
+// ? 2. parameter : 0 ise araya ekleme, 1 ise uzerine yazma
+// ? 3. parameter : yeni eklenecek veri
+
+cars.splice(1, 0, "VW");
+console.log(cars);
+
+cars.splice(3, 1, "Maseratti");
+console.log(cars);
+
+// ? reverse() method
+cars.reverse();
+console.log(cars);
+
+// ? sort() method, diziyi alfabetik olarak siralar.
+// ! Alfabetik olarak siraladigi icin dogru sonuclar vermeyebilir.
+// ! There are lots of sorting algorithms, you can always google it.
+const numbers4 = [2, 111, 3, 22, 1, 11, 5, 7, 6];
+numbers4.sort((a, b) => a - b);
+console.log(numbers4);
+
+numbers4.sort((a, b) => b - a);
+console.log(numbers4);
+
+cars.sort();
+console.log(cars);
+
+
+
 // * ---------------------------------------- *//
 
 // * Immutator Methods * //
