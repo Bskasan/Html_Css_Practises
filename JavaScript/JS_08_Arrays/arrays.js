@@ -52,6 +52,22 @@ console.log(emptyArray);
 const codingLangs = new Array("C", "C++", "JS", "Go");
 console.log(codingLangs);
 
+// ? 3. Method - Array.of() method
+const numbers2 = Array.of(1, 2, 3);
+console.log(numbers2);
+// * ---------------------------------------- *//
+// * ---------------------------------------- *//
 
+
+// ? Dizilere erisirken index yani sira numarasi kullanilir.
+// ? We use index numbers to access of the values of Array.
+console.log(names[1])// Micheal
+const micheal = names[1];
+console.log(micheal);
+
+const names1 = ["Emir", "Mahmut", "Bekir", "Jonathan"];
+// const lastEl = names1[3]; -> Hard-coded.
+const lastEl = names1[names1.length - 1]; 
+console.log(lastEl);
 
 // * ---------------------------------------- *//
