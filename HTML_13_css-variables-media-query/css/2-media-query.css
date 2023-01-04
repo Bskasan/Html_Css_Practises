@@ -16,6 +16,40 @@ body {
   padding: 1rem 2rem;
 }
 
-header{
-    
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+header img {
+  width: 200px;
+}
+
+button {
+  border: 2px solid var(--red-dark);
+  border-radius: 5px;
+  box-shadow: var(--shadow-light);
+  padding: 1rem 1.2rem;
+  font-family: var(--ff-yeon);
+  font-size: var(--fs-lg);
+  margin: 1rem 0.5rem;
+  white-space: nowrap;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  transform: scale(0.97);
+}
+
+.btn-light {
+  background-color: var(--white);
+  color: var(--red-dark);
+}
+
+.btn-dark {
+  background-color: var(--red-dark);
+  color: var(--white);
 }
