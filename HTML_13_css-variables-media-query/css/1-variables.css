@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Prosto+One&family=Roboto:wght@300;400&family=Sevillana&display=swap");
+
+:root {
+  /* ? Colors */
+  --white: #fff;
+  --black: #222;
+  --magenta: magenta;
+  --green-dark: hsla(168, 66%, 22%, 1);
+  --green: hsla(115, 34%, 37%, 1);
+  --green-ligth: hsla(75, 51%, 60%, 1);
+  --yellow: hsla(52, 100%, 68%, 1);
+  --orange: hsla(11, 100%, 59%, 1);
+  --orange-dark: hsla(11, 100%, 40%, 1);
+  --orange-light: hsla(11, 100%, 70%, 1);
+
+  /* ? Font Families */
+  --ff-prosto: "Prosto One", cursive;
+  --ff-roboto: "Robot", sans-serif;
+  --ff-pt: "PT Sans Narrow", sans-serif;
+  --ff-sevillana: "Sevillana", cursive;
+  --ff-yeon: "Yeon Sung", cursive;
+
+  /* ? Font size */
+  --fs-3xl: 3rem;
+  --fs-2xl: 2rem;
+  --fs-xl: 1.8rem;
+  --fs-lg: 1.4rem;
+  --fs-md: 1rem;
+  --fs-sm: 0.8rem;
+  --fs-cs: 0.6rem;
+}
