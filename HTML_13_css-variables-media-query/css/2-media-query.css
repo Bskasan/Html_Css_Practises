@@ -1,12 +1,21 @@
+@import "theme.css";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--white);
+  font-family: var(--ff-roboto);
+}
 .container {
-  /* width: 1200px; */
   max-width: 1200px;
-  margin: auto;
-  border: 2px solid red;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+header{
+    
 }
