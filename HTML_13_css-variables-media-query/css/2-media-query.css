@@ -74,18 +74,21 @@ nav.hero img {
 nav.hero h1 {
   font-size: var(--fs-xl);
   line-height: var(--line-h-xl);
+  text-align: justify;
 }
 
 nav.hero p {
   font-size: var(--fs-lg);
   line-height: var(--line-h-xl);
+  text-align: justify;
 }
 
 main .card {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 20px;
+  border: 5px solid rgba(0, 0, 0, 0.082);
+  border-radius: 15px;
   box-shadow: var(--shadow-light);
   padding: 1rem;
   gap: 1rem;
@@ -111,9 +114,41 @@ main .card:nth-child(even) {
 }
 
 @media screen and (max-width: 700px) {
-    
-    header{
-        flex-direction: column;
-    }
+  body {
+    background-color: var(--blue-light-5);
+  }
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  header button {
+    margin: 0.5rem;
+  }
+
+  header img {
+    width: 300px;
+  }
+
+  nav.hero {
+    flex-direction: column;
+  }
+
+  nav.hero section {
+    text-align: center;
+  }
+
+  main .card:nth-child(odd) {
+    flex-direction: column;
+  }
+
+  main .card:nth-child(even) {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  body {
+    background-color: var(--grey-10);
+  }
 }
