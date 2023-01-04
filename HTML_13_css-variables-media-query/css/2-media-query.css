@@ -53,3 +53,67 @@ button:hover {
   background-color: var(--red-dark);
   color: var(--white);
 }
+
+nav.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  /* flex-wrap: wrap; - We will use breakpoints instead of this one. */
+}
+
+nav.hero section {
+  flex: 1;
+}
+
+nav.hero img {
+  width: 80%;
+  min-width: 300px;
+}
+
+nav.hero h1 {
+  font-size: var(--fs-xl);
+  line-height: var(--line-h-xl);
+}
+
+nav.hero p {
+  font-size: var(--fs-lg);
+  line-height: var(--line-h-xl);
+}
+
+main .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 20px;
+  box-shadow: var(--shadow-light);
+  padding: 1rem;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+main .card article {
+  /* Flexi direkt resme verince calismiyor. */
+  flex: 1;
+  line-height: var(--line-h-xl);
+}
+
+main .card img {
+  width: 100%;
+}
+
+main .card:nth-child(odd) {
+  flex-direction: row;
+}
+
+main .card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 700px) {
+    
+    header{
+        flex-direction: column;
+    }
+
+}
