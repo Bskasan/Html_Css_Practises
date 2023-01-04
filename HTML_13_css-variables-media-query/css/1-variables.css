@@ -28,4 +28,33 @@
   --fs-md: 1rem;
   --fs-sm: 0.8rem;
   --fs-cs: 0.6rem;
+
+  /* ? Shadows */
+  --shadow-dark: 0 0 10px rgba(0, 0, 0, 0.4);
+  --shadow-ligth: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  color: var(--green-dark);
+  font-family: var(--ff-prosto);
+  font-size: var(--fs-3xl);
+}
+
+p{
+    font-size: var(--fs-sm);
+    font-family: var(--ff-sevillana);
+}
+
+.light{
+    padding: 3rem;
+    background-color: var(--yellow);
+    box-shadow: var(--shadow-ligth);
+    font-family: var(--ff-pt);
+}
+
+.dark{
+    padding: 3rem;
+    background-color: var(--green-ligth);
+    box-shadow: var(--shadow-dark);
+    margin-bottom: 2rem;
 }
