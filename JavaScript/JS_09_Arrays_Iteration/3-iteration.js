@@ -47,6 +47,29 @@ console.log(prices);
 //*                      MAP METHOD
 //* =======================================================
 
+//? --------------------SAMPLE-----------------------------
+//? Bir dizideki tum isimleri BUYUK harfe donusturen uygulamayi yaziniz.
+
+let names = ["Mustafa", "Murat", "Ahmet", "Mustafa", "Ayse", "canan"];
+
+//! Functional Programming by using methods like map and forEach.
+const upperNames = names.map((n) => n.toLocaleUpperCase());
+console.log(upperNames);
+console.log(names);
+
+//?------------------------SAMPLE--------------------------
+//? tlPrices dizisindeki rakamlarin Euro ve Dolar
+//? karsiliklarini hesaplatarak yeni dizilere kaydediniz.
+
+const euro = 18.23;
+const dolar = 18.19;
+const tlPrices = [100, 150, 100, 50, 80];
+
+const euroPrices = tlPrices.map((etl) => (etl / euro).toFixed(2));
+const dolarPrices = tlPrices.map((dtl) => (dtl / dolar).toFixed(2));
+
+console.log(euroPrices);
+console.log(dolarPrices);
 //* =======================================================
 //*                      CHAINING (PIPELINE)
 //* =======================================================
