@@ -57,6 +57,8 @@ const students = [
   "mehmet",
   "cem",
   "ahmet",
+  "bekir",
+  "bekir"
 ];
 
 const findStudent = (name) => {
@@ -82,3 +84,31 @@ console.log(findStudent("Mehmet"));
 //* =======================================================
 //*                      FOR-OF LOOP
 //* =======================================================
+
+//* for of dongusu, for in dongusunun bir cok veri yapisini
+//* kapsayacak sekilde guncellenmis halidir. Bu dongude dizi
+//* icersindeki veriye erisirken indisleme kullanmaya gerek yoktur.
+
+const findStudentForOf = (name) => {
+  let counter = 0;
+
+  for (student of students) {
+    //* Ternary
+    // student === name.toLowerCase() ? counter++ : null
+
+    //* Short-Circuit yontemi
+    // ? kosul false uretirse counter'ı eksilt
+    //! student === name.toLowerCase() || counter--
+
+    // ? kosul true uretirse counter'ı arttir
+    student === name.toLowerCase() && counter++;
+  }
+
+  return !counter
+    ? `${name} cannot be found.`
+    : `${name} found ${counter} times.`;
+};
+
+console.log(findStudentForOf("mehMet"));
+console.log(findStudentForOf("Bekir"));
+console.log(findStudentForOf("Abdullah"));
