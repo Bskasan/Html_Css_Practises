@@ -25,10 +25,6 @@ body {
   align-items: center;
 }
 
-.content:hover {
-  font-size: 2rem;
-  cursor: pointer;
-}
 
 .content6 {
   /*! item'lari bireysel olarak yatay duzlemde hizalar. */
@@ -40,4 +36,42 @@ body {
   /*! item'lari bireysel olarak dikey duzlemde hizalar. */
   align-self: flex-start;
   height: 4rem;
+}
+
+.content10 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: coral;
+}
+
+.content4{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: lightgreen;
+}
+
+.content8{
+    /* grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5; */
+
+    /*!  grid-area: row_start / col_start / row_end / col_end */
+    grid-area: 3/2/5/4;
+    background-color: red;
+}
+
+.content8 iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.content13{
+    grid-area: 5/2/span 2/ span 2;
 }
