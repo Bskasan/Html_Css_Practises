@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 50vh 25vh 25vh;
+  gap: 1rem;
+
+  /*! grid seviyesinde yatay hizalama */
+  justify-content: center;
+}
+
+.content {
+  /*! Grid Container icerisindeki item'lara Flex özelliği kazandirilabilir.
+  /*! Boylece item'larin icerisindeki content'lerin yatay ve dikey hizalamasi yapilabilir. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: lightblue;
+  border: 1px solid red;
+}
+
+.content7 {
+  overflow: auto;
+}
+
+.content9 {
+  /*! Recommended way of adding image to your HTML page. */
+  background-image: url(../images/catImage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
