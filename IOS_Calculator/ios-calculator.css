@@ -25,9 +25,14 @@
   border-radius: 50%;
   font-size: 2.5rem;
   color: white;
-  background-color: #333333;
+  background-color: #474747;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
+}
+
+.box:hover{
+    cursor: pointer;
+    background-color: #555353;
 }
 
 .box1 {
@@ -39,6 +44,10 @@
   align-items: flex-end;
   background-color: black;
   font-size: 4rem;
+}
+
+.box1:hover{
+    background-color: black;
 }
 
 .box2 {
@@ -57,16 +66,29 @@
 }
 
 .box5 {
-  background-color: #f1a33c;
+  background-color: #FF9500;
+}
+
+.box5:hover{
+    background-color: #a87027;
 }
 
 .box9 {
-  background-color: #f1a33c;
+  background-color: #FF9500;
+}
+
+.box9:hover{
+    background-color: #a87027;
 }
 
 .box13 {
-  background-color: #f1a33c;
+  background-color: #FF9500;
 }
+
+.box13:hover{
+    background-color: #a87027;
+}
+
 
 .box18 {
   grid-column-start: 1;
