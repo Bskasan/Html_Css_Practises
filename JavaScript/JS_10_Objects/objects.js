@@ -64,13 +64,12 @@ console.log(this);
 //*------------------------------------------------------------
 
 const worker = {
-    name: "John",
-    surname: "Carter",
-    age: 32,
-    languages: ["C++", "Go", "Java", "JavaScript"],
-    salary: 10000,
-}
-
+  name: "John",
+  surname: "Carter",
+  age: 32,
+  languages: ["C++", "Go", "Java", "JavaScript"],
+  salary: 10000,
+};
 
 console.log(worker);
 
@@ -87,7 +86,6 @@ console.log(upperCaseLangs);
 worker.nationality = "USA";
 console.log(worker);
 
-
 const person = worker; // ? Shallow Copying vs Deep Copying
 person.dob = 2000;
 
@@ -95,7 +93,46 @@ console.log({ worker });
 console.log({ person });
 
 //! Deep Compy !//
-let deepCopyOfWorker = JSON.parse(JSON.stringify(worker)) //? Deep Copy
+let deepCopyOfWorker = JSON.parse(JSON.stringify(worker)); //? Deep Copy
 // --> Converting String(stringfy) --> Converting Object (parse)
 console.log(JSON.stringify(worker));
 
+//*============================================================
+//*                 OBJECT METHODS
+//*============================================================
+
+const personalInfo = {
+  name: "Bekir",
+  surname: "Kasan",
+  dob: "1994",
+  salary: 12000,
+  job: "Developer",
+  drivingLicence: false,
+  calculateAge: function () {
+    return new Date().getFullYear() - this.dob;
+  },
+  //summary: () => {
+  //  return `${this.name} is ${this.calculateAge()} years old.`;
+  //},
+  summary: function () {
+    return `${this.name} was born in ${
+      this.dob
+    } and He is ${this.calculateAge()} years old.`;
+  },
+};
+
+//! We cannot use this keyword in the arrow function, because it will show us the global scope. We shouldn't use much inside of objects. It is more effective to use them in the functions(Nested Functions). (---Senior Question---). This keyword in the arrow function won't work on the console!!!
+
+//? arrow func'lar aslinda this keyword'lerini kaldirmak icin gelistirilmis bir fonksiyon yazma yontemidir. Bu sebeple, dogrudan global scope'a  baglidir.
+
+//! NOT: arrow fonksiyonlari ozellikle callback fonksiyonu olarak
+//! kullanilmak ve bu fonksiyonlarda this keyword kullanim
+//! gereksinimini kaldirmak icin gelistirilmistir.
+//! Lexical context'e sahiptirler.Dolayisiyla, bir obje fonksiyonu
+//! olarak kullanilirsa, this kelimesi global scope'u (window nesnesini)
+//! gösterir. Bunu engellemek için object fonksiyonlarini tanimlarken
+//! diger (func. expression veya declaration) yontemlerini kullanabilir.
+
+console.log(personalInfo.dob);
+console.log(personalInfo.calculateAge());
+console.log(personalInfo.summary());
