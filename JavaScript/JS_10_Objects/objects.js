@@ -62,3 +62,27 @@ console.log(this);
 //*------------------------------------------------------------
 //* 3-  Object literal ( Most used and recommended)
 //*------------------------------------------------------------
+
+const worker = {
+    name: "John",
+    surname: "Carter",
+    age: 32,
+    languages: ["C++", "Go", "Java", "JavaScript"],
+    salary: 10000,
+}
+
+
+console.log(worker);
+
+//? Write
+worker.age += 1;
+console.log(worker);
+
+worker["languages"].forEach((lang) => console.log(lang));
+
+const upperCaseLangs = worker["languages"].map((lang) => lang.toUpperCase());
+console.log(upperCaseLangs);
+
+//? Adding new key/property and value to our object.
+worker.nationality = "USA";
+console.log(worker);
