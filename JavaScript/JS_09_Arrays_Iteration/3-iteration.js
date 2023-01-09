@@ -74,6 +74,13 @@ console.log(dolarPrices);
 //*                      CHAINING (PIPELINE)
 //* =======================================================
 
+//! if we have two conditions or filter we can use chaining.
+//! if you have chance to use one line code, you should use to have cleaner code.
+const salaries = [80000, 75000, 120000, 100000];
+const addedSalaries = salaries.filter((s) => s < 100000).map((y) => y * 1.1);
+console.log(salaries);
+console.log(addedSalaries);
+
 //* =======================================================
 //*                      FILTER METHOD
 //* =======================================================
@@ -81,6 +88,8 @@ console.log(dolarPrices);
 const nums = [10000, 2000, 5000, 25000];
 const numsFilter = nums.filter((v) => v >= 8500);
 console.log(numsFilter);
+
+
 
 //* =======================================================
 //*                      REDUCE METHOD
