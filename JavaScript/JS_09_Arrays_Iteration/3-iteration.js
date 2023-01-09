@@ -80,10 +80,14 @@ const salaries = [80000, 75000, 120000, 100000];
 //* Two stages (filter and map methods)
 //* 1 -> s < 100000
 //* 2 -> y * 1.1
-const addedSalaries = salaries.filter((s) => s < 100000).map((y) => y * 1.1);
+const addedSalaries = salaries
+  .filter((s) => s < 100000)
+  .map((y) => Math.trunc(y * 1.1))
+  .forEach((x) => console.log(x));
+//? addedSalaries is an exercise for Chaining (Pipeline).
+//? We cannot use a map or sth else after forEach method, because forEach doesn't have return or doesn't return sth. It's a void function.
 console.log(salaries);
 console.log(addedSalaries);
-
 
 //* =======================================================
 //*                      FILTER METHOD
@@ -96,10 +100,19 @@ console.log(numsFilter);
 const range = nums.filter((n) => n >= 6000 && n <= 20000);
 console.log(range);
 
-
 //* =======================================================
 //*                      REDUCE METHOD
 //* =======================================================
+
+//! it returns value, not array.
+let nums2 = [1, 2, 3, 4, 5, 6, 7];
+let sum2 = nums2.reduce((acc, value) => acc + value, 0);
+let mul2 = nums2.reduce((acc, value) => acc * value, 1);
+let sumSalaries = salaries.reduce((total, salary) => total + salary);
+//* 0 / 1, from which value it starts.
+console.log(sum2);
+console.log(mul2);
+console.log("TOTAL SALARIES : ", sumSalaries); // ? 375.000
 
 //* =======================================================
 //*                      OTHERS
