@@ -77,18 +77,24 @@ console.log(dolarPrices);
 //! if we have two conditions or filter we can use chaining.
 //! if you have chance to use one line code, you should use to have cleaner code.
 const salaries = [80000, 75000, 120000, 100000];
+//* Two stages (filter and map methods)
+//* 1 -> s < 100000
+//* 2 -> y * 1.1
 const addedSalaries = salaries.filter((s) => s < 100000).map((y) => y * 1.1);
 console.log(salaries);
 console.log(addedSalaries);
+
 
 //* =======================================================
 //*                      FILTER METHOD
 //* =======================================================
 
-const nums = [10000, 2000, 5000, 25000];
+const nums = [10000, 2000, 5000, 25000, 7500, 18000, 14000, 7200];
 const numsFilter = nums.filter((v) => v >= 8500);
 console.log(numsFilter);
 
+const range = nums.filter((n) => n >= 6000 && n <= 20000);
+console.log(range);
 
 
 //* =======================================================
