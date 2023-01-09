@@ -86,3 +86,16 @@ console.log(upperCaseLangs);
 //? Adding new key/property and value to our object.
 worker.nationality = "USA";
 console.log(worker);
+
+
+const person = worker; // ? Shallow Copying vs Deep Copying
+person.dob = 2000;
+
+console.log({ worker });
+console.log({ person });
+
+//! Deep Compy !//
+let deepCopyOfWorker = JSON.parse(JSON.stringify(worker)) //? Deep Copy
+// --> Converting String(stringfy) --> Converting Object (parse)
+console.log(JSON.stringify(worker));
+
