@@ -137,43 +137,69 @@ console.log(personalInfo.dob);
 console.log(personalInfo.calculateAge());
 console.log(personalInfo.summary());
 
-
-
 //?============================================================
 //?                 ASSIGNMENT
 //?============================================================
 
 //? nested
 const people = {
-    person1: {
-      name: "Can",
-      surname: "Canan",
-      dob: "1990",
-      job: "developer",
-      salary: "140000",
-      drivingLicense: true,
-    },
-    person2: {
-      name: "John",
-      surname: "Sweet",
-      dob: "1990",
-      job: "tester",
-      salary: "110000",
-      drivingLicense: false,
-    },
-    person3: {
-      name: "Steve",
-      surname: "Job",
-      dob: "2000",
-      job: "developer",
-      salary: "90000",
-      drivingLicense: true,
-    },
-  }
-  
-  //! ASSIGMENT
-  //? person2'nin adini ve maasini yazdiriniz.
-  
-  //? people objesindeki tum salary 'leri yazdirin (Dongu kullanilmali)
-  
-  //? job'i developer olanlarin dob degerlerini yazdiriniz.
+  person1: {
+    name: "Can",
+    surname: "Canan",
+    dob: "1990",
+    job: "developer",
+    salary: "140000",
+    drivingLicense: true,
+  },
+  person2: {
+    name: "John",
+    surname: "Sweet",
+    dob: "1990",
+    job: "tester",
+    salary: "110000",
+    drivingLicense: false,
+  },
+  person3: {
+    name: "Steve",
+    surname: "Job",
+    dob: "2000",
+    job: "developer",
+    salary: "90000",
+    drivingLicense: true,
+  },
+};
+
+console.log("******* Assignment *********");
+
+//! ASSIGMENT
+//? person2'nin adini ve maasini yazdiriniz.
+
+console.log(people.person2.name);
+console.log(people.person2.salary);
+
+//* One line and more readable line for this question
+console.log(`${people.person2.name}'s salary is ${people.person2.salary}`);
+
+//? people objesindeki tum salary 'leri yazdirin (Dongu kullanilmali)
+//? You can read the details about this question.
+//? https://stackoverflow.com/questions/32173793/javascript-print-nested-object-using-for-loop
+
+let salaries = Object.keys(people).map(function(k){
+    var p = people[k];
+
+    return [`${p.name}'s salary is ${p.salary}.\n`].join(" ");
+}).join(" ");
+
+console.log(salaries);
+
+//? job'i developer olanlarin dob degerlerini yazdiriniz.
+
+let developersDOB = Object.keys(people).map(function(k){
+    var p = people[k];
+    if(p.job === "developer") {
+        return [`Developer ${p.name} was born in ${p.dob}.\n`].join(" ");
+    }
+    
+}).join(" ");
+
+console.log(developersDOB);
