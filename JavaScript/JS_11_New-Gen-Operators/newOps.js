@@ -104,15 +104,61 @@ team.forEach((t, i) => {
 });
 
 //* Destructuring
-team.forEach((person, i) => {
-    const { name, surname, job, age } = person
-    console.log(i + 1 + ".NAME:", name)
-    console.log("SURNAME:", surname)
-    console.log("JOB:", job)
-    console.log("AGE:", age)
-    console.log("*************")
-  })
-  
+team.forEach((person, index) => {
+  const { name, surname, job, age } = person;
+  console.log(index + 1 + ".NAME:", name);
+  console.log("SURNAME:", surname);
+  console.log("JOB:", job);
+  console.log("AGE:", age);
+  console.log("*************");
+});
 
-  //* functionun dondurdugu obje dogrudan dest. yapilabilir
-  
+//* functionun dondurdugu obje dogrudan dest. yapilabilir
+//* Kullandigimiz yere gore degisiklik gosteriyor, hangisini kullanacagimiz.
+
+const getInfo = () => {
+  return {
+    id: new Date().getTime(),
+    productName: "MacBook",
+    price: 50000,
+  };
+};
+console.log(getInfo());
+
+const { productName, price } = getInfo();
+console.log("PrICE:", price);
+
+const calculate = ({ price, name }) => {
+  console.log("NAME:", name);
+  console.log("PRICE:", price * 1.2);
+};
+
+calculate({ price: 50000, name: "macbook" });
+
+// const check = ({ a, b, c }) => { //? yolda destr.
+//   console.log(a, b, c)
+// }
+
+const check = (data) => {
+  const { a, b, c } = data; //? icerde destr
+  console.log(a, b, c);
+};
+
+const data = {
+  a: 1,
+  b: 2,
+  c: 3,
+};
+
+check(data);
+
+//* ======================================================
+//*  DESTRUCTURING (ARRAY)
+//* ======================================================
+const names = ["Ahmet", "Mehmet", "İsmet", "Saffet"];
+
+//*Classical
+const mehmet = names[1]; //* indexing
+
+const [p1, p2, , p4] = names;
+console.log(p1, p2, p4);
