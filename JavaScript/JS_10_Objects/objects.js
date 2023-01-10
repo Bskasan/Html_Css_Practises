@@ -284,4 +284,50 @@ const team = [
   { name: "Josh", surname: "Adams", job: "developer", age: 30 },
   { name: "Mary", surname: "Bary", job: "tester", age: 22 },
   { name: "Hazel", surname: "Nut", job: "developer", age: 20 },
-] //* JSON
+]; //* JSON
+
+console.log(team);
+console.log(team[1]);
+
+//? team dizisine veri ekledik
+team.push({ name: "Ahmet", surname: "yilmaz", job: "developer", age: 22 });
+console.log(team);
+
+//* Ornek1: team dizisindeki job'lari tek tek yazdiriniz.
+team.forEach((p) => console.log(p.job));
+
+//* Ornek2: age'leri bir artirarak yeni bir diziye saklayiniz.
+const agesIncByOne = team.map((x) => x.age + 1);
+console.log(agesIncByOne); //?(4) [31, 23, 21, 23]
+
+//* Ornek3: name ve surname'leri birlestirip buyuk harfe ceviren ve
+//* bunu fullName key'i olarak saklayan, ayni zamanda age degerlerini 5
+//* arttirarak age key'ine saklayan ve olusan diziyi donduren kodu yazınız.
+
+// const teamFullName = team.map((p) => {
+//   return {
+//     fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
+//     age: p.age + 5,
+//   }
+// })
+
+//? alternative yontem
+const teamFullName = team.map((p) => ({
+  fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
+  age: p.age + 5,
+}));
+
+console.log(teamFullName);
+
+//* Ornek: teamFullName dizisindeki 30 yasindan kucuk ve esit olanlarin isimlerini diziye saklayiniz.
+
+const teamUnder22 = teamFullName
+  .filter((p) => p.age < 30)
+  .map((p) => p.fullName);
+console.log(teamUnder22);
+
+//* Ornek6: ortalama yasi hesaplayiniz.
+const avgAges =
+  teamFullName.reduce((sum, person) => sum + person.age, 0) /
+  teamFullName.length;
+console.log(avgAges);
