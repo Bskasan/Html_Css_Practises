@@ -180,26 +180,108 @@ console.log(people.person2.salary);
 //* One line and more readable line for this question
 console.log(`${people.person2.name}'s salary is ${people.person2.salary}`);
 
+//*============================================================
+//*============================================================
+//*============================================================
+
 //? people objesindeki tum salary 'leri yazdirin (Dongu kullanilmali)
 //? You can read the details about this question.
 //? https://stackoverflow.com/questions/32173793/javascript-print-nested-object-using-for-loop
 
-let salaries = Object.keys(people).map(function(k){
+let salaries = Object.keys(people)
+  .map(function (k) {
     var p = people[k];
 
     return [`${p.name}'s salary is ${p.salary}.\n`].join(" ");
-}).join(" ");
+  })
+  .join(" ");
 
 console.log(salaries);
 
-//? job'i developer olanlarin dob degerlerini yazdiriniz.
+//? Solution - Noah Hoca
+//! FOR - IN
+//* for (key in object) {
+//*   // code block to be executed.
+//*}
 
-let developersDOB = Object.keys(people).map(function(k){
+for (let person in people) {
+  console.log(person);
+  console.log(people[person].salary);
+}
+
+//! FOR - OF
+//* for (x of iterable) {
+//*   code block to be executed
+//* }
+
+//? Object Methods
+console.log(Object.keys(people));
+console.log(Object.values(people));
+console.log(Object.entries(people));
+
+for (let key of Object.keys(people)) {
+  console.log(key);
+}
+
+for (let value of Object.values(people)) {
+  console.log(value);
+}
+
+for (let [k, v] of Object.entries(people)) {
+  console.log("KEY: ", k, "VALUE: ", v);
+}
+
+//! ARRAY METOTLARI ILE
+console.log("*********");
+Object.keys(people).forEach((p) => console.log(p));
+console.log("*********");
+
+Object.values(people).forEach((p) => console.log(p.name));
+
+//? Javascript'de Objeler default olarak iterable degildir.
+//? Ama for in ve for of donguleri ile itere edilebilirler.
+
+//? Objelerin key ve value'larini okumak icin built-in metotlar vardir.
+//? Bu mettotlar aslinda objelerin key ve/veya value'lari bir dizi olarak dondurur.
+
+//*============================================================
+//*============================================================
+//*============================================================
+
+//? job'i developer olanlarin dob degerlerini yazdiriniz.
+console.log("*********");
+let developersDOB = Object.keys(people)
+  .map(function (k) {
     var p = people[k];
-    if(p.job === "developer") {
-        return [`Developer ${p.name} was born in ${p.dob}.\n`].join(" ");
+    if (p.job === "developer") {
+      return [`Developer ${p.name} was born in ${p.dob}.\n`].join(" ");
     }
-    
-}).join(" ");
+  })
+  .join(" ");
 
 console.log(developersDOB);
+console.log("*********");
+//? Solution - Noah Hoca
+Object.values(people)
+  .filter((p) => p.job === "developer")
+  .forEach((p) => console.log(p.dob));
+
+Object.values(people)
+  .filter((p) => p.job === "developer")
+  .forEach((p) => console.log(p.dob));
+
+console.log("*****");
+const dobs = Object.values(people)
+  .filter((p) => p.job === "developer")
+  .map((p) => p.dob); //? (2) ['1990', '2000']
+
+console.log(dobs);
+
+//********************************************************
+//* JSON => Javascript Object Notation
+//********************************************************
+const team = [
+  { name: "Josh", surname: "Adams", job: "developer", age: 30 },
+  { name: "Mary", surname: "Bary", job: "tester", age: 22 },
+  { name: "Hazel", surname: "Nut", job: "developer", age: 20 },
+] //* JSON
