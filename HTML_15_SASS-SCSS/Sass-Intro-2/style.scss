@@ -9,8 +9,15 @@
 //********************************************/
 $bgColor: pink;
 $fontFamily: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$fontSize: 1.2rem;
+$navBgColor: #30a7c3;
+$bannerBgColor: hotpink;
+$myBorder: 2px solid brown;
+$fontColor: white;
 
 body {
   background-color: $bgColor;
   font-family: $fontFamily;
+  font-size: $fontSize;
+  color: $fontColor;
 }
