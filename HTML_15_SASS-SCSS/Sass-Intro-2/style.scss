@@ -14,6 +14,7 @@ $navBgColor: #30a7c3;
 $bannerBgColor: hotpink;
 $myBorder: 2px solid brown;
 $fontColor: white;
+$buttonColor: rgb(224, 169, 169);
 
 body {
   background-color: $bgColor;
@@ -41,17 +42,46 @@ header {
     li {
       display: inline;
       padding: 0.5rem;
-       //! içinde bulundğumuz elementi refere etmek için & işareti kullanılır.
+      //! içinde bulundğumuz elementi refere etmek için & işareti kullanılır.
       &:hover {
         text-decoration: underline;
         font-size: $fontSize + 0.05rem;
       }
     }
-    
   }
 
   a {
     color: $fontColor;
     text-decoration: none;
+  }
+}
+
+//********** BANNER ***********//
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bannerBgColor;
+  padding: 1rem;
+  line-height: 2rem;
+
+  aside {
+    button{
+        padding: 0.5rem;
+        border: none;
+        border-radius: 5px;
+        background-color: $buttonColor;
+        margin-top: 1rem;
+        margin-right: 0.5rem;
+        &:hover{
+            background-color: pink;
+            cursor: pointer;
+        }
+    }
+  }
+
+  img {
+    width: 30%;
   }
 }
