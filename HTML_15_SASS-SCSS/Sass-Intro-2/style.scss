@@ -41,6 +41,7 @@ header {
     li {
       display: inline;
       padding: 0.5rem;
+       //! içinde bulundğumuz elementi refere etmek için & işareti kullanılır.
       &:hover {
         text-decoration: underline;
         font-size: $fontSize + 0.05rem;
