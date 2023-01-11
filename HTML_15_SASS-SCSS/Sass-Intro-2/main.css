@@ -118,4 +118,43 @@ header a {
   border-color: green;
 }
 
+footer p {
+  background-color: orangered;
+}
+
+.social-icons {
+  display: flex;
+  height: 10rem;
+}
+.social-icons .social1 {
+  width: 20%;
+  background-color: #1a1aff;
+  font-size: 1rem;
+  color: #990000;
+}
+.social-icons .social2 {
+  width: 20%;
+  background-color: #3333ff;
+  font-size: 2rem;
+  color: #55004e;
+}
+.social-icons .social3 {
+  width: 20%;
+  background-color: #4d4dff;
+  font-size: 3rem;
+  color: #0fa8a1;
+}
+.social-icons .social4 {
+  width: 20%;
+  background-color: #6666ff;
+  font-size: 4rem;
+  color: #121456;
+}
+.social-icons .social5 {
+  width: 20%;
+  background-color: #8080ff;
+  font-size: 5rem;
+  color: #64c217;
+}
+
 /*# sourceMappingURL=main.css.map */
