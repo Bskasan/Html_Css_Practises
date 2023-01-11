@@ -1,0 +1,9 @@
+/* How to declare variable in SASS */
+$primaryColor: rgb(187, 62, 12);
+
+body {
+  background-color: $primaryColor;
+  p {
+    background-color: brown;
+  }
+}

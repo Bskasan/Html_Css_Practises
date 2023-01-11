@@ -1,9 +1,0 @@
-SASS Stand For:
-
-S - Syntactically 
-A - Awesome
-S - Style 
-S - Sheet
-
-
-

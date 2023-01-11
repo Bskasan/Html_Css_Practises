@@ -1,0 +1,9 @@
+/* How to declare variable in SASS */
+body {
+  background-color: rgb(187, 62, 12);
+}
+body p {
+  background-color: brown;
+}
+
+/*# sourceMappingURL=style.css.map */
