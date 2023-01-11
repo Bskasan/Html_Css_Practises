@@ -63,4 +63,42 @@ header a {
   width: 30%;
 }
 
+.cards {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+.cards .card1 {
+  background-color: green;
+  color: red;
+  width: 25%;
+  height: 20rem;
+  border: 2px solid brown;
+  border-radius: 5px;
+}
+.cards .card2 {
+  background-color: brown;
+  color: white;
+  width: 25%;
+  height: 20rem;
+  border: 2px solid brown;
+  border-radius: 5px;
+}
+.cards .card3 {
+  background-color: green;
+  color: yellow;
+  width: 25%;
+  height: 20rem;
+  border: 2px solid brown;
+  border-radius: 5px;
+}
+.cards .card4 {
+  background-color: magenta;
+  color: orange;
+  width: 25%;
+  height: 20rem;
+  border: 2px solid brown;
+  border-radius: 5px;
+}
+
 /*# sourceMappingURL=main.css.map */

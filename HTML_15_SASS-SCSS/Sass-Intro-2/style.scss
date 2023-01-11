@@ -85,3 +85,37 @@ header {
     width: 30%;
   }
 }
+
+//********** CARDS ***********//
+//! ******** @MIXIN **********
+//***************************
+
+@mixin myBox($bgColor, $color){
+    background-color: $bgColor;
+    color: $color;
+    width: 25%;
+    height: 20rem;
+    border: $myBorder;
+    border-radius: 5px;
+}
+
+.cards{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    .card1{
+        @include myBox(green, red);
+    }
+
+    .card2{
+        @include myBox(brown, white);
+    }
+
+    .card3{
+        @include myBox(green, yellow);
+    }
+
+    .card4{
+        @include myBox(magenta, orange);
+    }
+}
