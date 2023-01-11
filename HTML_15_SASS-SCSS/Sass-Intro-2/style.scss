@@ -21,3 +21,36 @@ body {
   font-size: $fontSize;
   color: $fontColor;
 }
+
+//********** HEADER ***********//
+
+header {
+  background-color: $navBgColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  img {
+    width: 80px;
+    border: $myBorder;
+    border-radius: 10px;
+  }
+
+  ul {
+    list-style-type: none;
+    li {
+      display: inline;
+      padding: 0.5rem;
+      &:hover {
+        text-decoration: underline;
+        font-size: $fontSize + 0.05rem;
+      }
+    }
+    
+  }
+
+  a {
+    color: $fontColor;
+    text-decoration: none;
+  }
+}
