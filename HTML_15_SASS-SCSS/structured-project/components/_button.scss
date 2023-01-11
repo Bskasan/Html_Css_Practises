@@ -1,0 +1,24 @@
+.button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: $navBgColor;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    &:hover {
+      background-color: pink;
+      cursor: pointer;
+    }
+  }
+  .button-error{
+    @extend .button;
+    background-color: red;
+  }
+  .button-success{
+    @extend .button;
+    background-color: blue;
+  }
+  .button-warning{
+    @extend .button;
+    background-color: orange
+  }

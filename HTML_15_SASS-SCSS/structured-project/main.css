@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.button, .button-warning, .button-success, .button-error {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: hotpink;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+.button:hover, .button-warning:hover, .button-success:hover, .button-error:hover {
+  background-color: pink;
+  cursor: pointer;
+}
+
+.button-error {
+  background-color: red;
+}
+
+.button-success {
+  background-color: blue;
+}
+
+.button-warning {
+  background-color: orange;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact {
+  float: left;
+  background-color: magenta;
+}
+
+.dark {
+  background-color: gray;
+}
+
+.light {
+  background-color: lightgray;
+}
+
+/*# sourceMappingURL=main.css.map */
