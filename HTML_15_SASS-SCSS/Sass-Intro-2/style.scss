@@ -67,17 +67,17 @@ header {
   line-height: 2rem;
 
   aside {
-    button{
-        padding: 0.5rem;
-        border: none;
-        border-radius: 5px;
-        background-color: $buttonColor;
-        margin-top: 1rem;
-        margin-right: 0.5rem;
-        &:hover{
-            background-color: pink;
-            cursor: pointer;
-        }
+    button {
+      padding: 0.5rem;
+      border: none;
+      border-radius: 5px;
+      background-color: $buttonColor;
+      margin-top: 1rem;
+      margin-right: 0.5rem;
+      &:hover {
+        background-color: pink;
+        cursor: pointer;
+      }
     }
   }
 
@@ -90,32 +90,55 @@ header {
 //! ******** @MIXIN **********
 //***************************
 
-@mixin myBox($bgColor, $color){
-    background-color: $bgColor;
-    color: $color;
-    width: 25%;
-    height: 20rem;
-    border: $myBorder;
-    border-radius: 5px;
+@mixin myBox($bgColor, $color) {
+  background-color: $bgColor;
+  color: $color;
+  width: 25%;
+  height: 20rem;
+  border: $myBorder;
+  border-radius: 5px;
 }
 
-.cards{
-    display: flex;
-    gap: 2rem;
-    padding: 1rem;
-    .card1{
-        @include myBox(green, red);
-    }
+.cards {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  .card1 {
+    @include myBox(green, red);
+  }
 
-    .card2{
-        @include myBox(brown, white);
-    }
+  .card2 {
+    @include myBox(brown, white);
+  }
 
-    .card3{
-        @include myBox(green, yellow);
-    }
+  .card3 {
+    @include myBox(green, yellow);
+  }
 
-    .card4{
-        @include myBox(magenta, orange);
-    }
+  .card4 {
+    @include myBox(magenta, orange);
+  }
+}
+
+//********** ARTICLES ***********//
+//! ******** @EXTEND  (NO PARAMETER) **********
+//******************************
+
+.articles {
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+  .article1 {
+    background-color: grey;
+    width: 50%;
+    height: 10rem;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+
+  .article2 {
+    @extend .article1;
+    background-color: hotpink; /* Override of a class above. */
+    border-color: green;
+  }
 }

@@ -101,4 +101,21 @@ header a {
   border-radius: 5px;
 }
 
+.articles {
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+}
+.articles .article1, .articles .article2 {
+  background-color: grey;
+  width: 50%;
+  height: 10rem;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+.articles .article2 {
+  background-color: hotpink; /* Override of a class above. */
+  border-color: green;
+}
+
 /*# sourceMappingURL=main.css.map */
