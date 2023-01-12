@@ -266,7 +266,7 @@ const herNumbers = [-5, -4, ...myNumbers, -22]; // Concatenation
 console.log(herNumbers);
 
 // const hisNumbers = herNumbers //? Shallow Copy
-const hisNumbers = [...herNumbers];//? Deep Copy
+const hisNumbers = [...herNumbers]; //? Deep Copy
 hisNumbers.push(-55);
 hisNumbers[5][1] = 88; //? Nested olan degerler deep copy olmaz.
 console.log(hisNumbers);
@@ -275,3 +275,14 @@ console.log(herNumbers);
 //! spread operatoru ile iki dizi arasinda kopyalama yapilabilir. bunlar birbirinden bagimsiz calisabilir. nested larda deep copy mantigi yoktur.
 
 //* Object Copy
+const myObj = { a: 1, b: 2, c: 4 };
+const herObj = { aa: 2, z: 4, cc: 3 };
+
+const copyObj = { ...myObj };
+console.log(copyObj);
+copyObj.c = 44;
+console.log(myObj);
+console.log(copyObj);
+
+const combinedObjs = {...herObj, ...myObj};
+console.log(combinedObjs);
