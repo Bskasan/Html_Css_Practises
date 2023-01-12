@@ -167,6 +167,7 @@ console.log(p1, p2, p4);
 //*  REST (...)
 //* ======================================================
 
+console.log("===============REST OPERATOR================");
 //? REST operatoru kullanici tarafindan girilen degerleri dizi
 //? icerisine konumlandirir. Cesitli kullanim alanlari vardir.
 
@@ -175,4 +176,50 @@ console.log(p1, p2, p4);
 
 //* REST: (Arrays)
 
-const autos = [""]
+const autos = ["anadol", "reno", "bmw", "mercedes", "ferrari"];
+
+const [x, y, , ...z] = autos; //Dest.
+console.log(x, y, z);
+
+//* REST: (Object)
+const personal = {
+  pName: "john",
+  surname: "smith",
+  job: "developer",
+  age: 30,
+};
+
+const { age, job, ...fullName } = personal;
+console.log(age, job);
+console.log(fullName);
+
+const { pName } = fullName;
+console.log(pName);
+
+//! 2- Bir fonksiyonun argumanlarini diziye cevirmek icin kullanilabilir.
+
+const sum = (a, b) => a + b;
+
+//? hata vermez fakat sadece 2 argumani toplar
+console.log("SUM: ", sum(2, 4, 6));
+
+const sumAll = (...numbers) => {
+  //! bireysel degerleri bir array'e cevirdi.
+  //? non-iterable -> iterable
+  console.log(numbers);
+  return numbers.reduce((s,v) => s + v, 0);
+};
+
+console.log("SUM: ", sumAll(2, 4, 6, 8));
+
+const showName = (name, surname, ...titles) => {
+  console.log(titles)
+  const summary = `${name} ${surname} is a ${titles.join(" and ")}`
+  console.log(summary)
+}
+
+showName("Noah", "Adams", "Developer", "Instr", "Professor", "Dad")
+
+//*==================================================
+//*  SPREAD (...)
+//* =================================================
