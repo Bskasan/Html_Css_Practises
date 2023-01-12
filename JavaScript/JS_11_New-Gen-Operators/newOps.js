@@ -162,3 +162,17 @@ const mehmet = names[1]; //* indexing
 
 const [p1, p2, , p4] = names;
 console.log(p1, p2, p4);
+
+//*======================================================
+//*  REST (...)
+//* ======================================================
+
+//? REST operatoru kullanici tarafindan girilen degerleri dizi
+//? icerisine konumlandirir. Cesitli kullanim alanlari vardir.
+
+//! 1- Bir dizi veya object'deki bazi degerlerden geri kalanlarini
+//!    ayri dizi yada objelere kopyalanmasini saglayabilir.
+
+//* REST: (Arrays)
+
+const autos = [""]
