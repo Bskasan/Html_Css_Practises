@@ -207,19 +207,71 @@ const sumAll = (...numbers) => {
   //! bireysel degerleri bir array'e cevirdi.
   //? non-iterable -> iterable
   console.log(numbers);
-  return numbers.reduce((s,v) => s + v, 0);
+  return numbers.reduce((s, v) => s + v, 0);
 };
 
 console.log("SUM: ", sumAll(2, 4, 6, 8));
 
 const showName = (name, surname, ...titles) => {
-  console.log(titles)
-  const summary = `${name} ${surname} is a ${titles.join(" and ")}`
-  console.log(summary)
-}
+  console.log(titles);
+  const summary = `${name} ${surname} is a ${titles.join(" and ")}`;
+  console.log(summary);
+};
 
-showName("Noah", "Adams", "Developer", "Instr", "Professor", "Dad")
+showName("Noah", "Adams", "Developer", "Instr", "Professor", "Dad");
 
 //*==================================================
 //*  SPREAD (...)
 //* =================================================
+
+//? Spread operatoru ise iterables olan bir elemani bireysel
+//? degerler haline getirir.
+
+//* Array concatenation
+const flyingVehicles = ["aircraft", "helicopter", "drone"];
+
+const autoMobile = ["truck", "suv", "Car"];
+
+//? 1. Method with concat method in Arrays.
+console.log(flyingVehicles.concat(autoMobile));
+
+//? 2. Method with Spread
+const allVehicles = [flyingVehicles, autoMobile];
+console.log(allVehicles);
+//! Opening and Combining the Arrays.
+const allVehicles2 = [...flyingVehicles, "Bicycle", ...autoMobile];
+console.log(allVehicles2);
+
+const citrus = ["orange", "lime", "lemon"];
+const fruits = ["apple", ...citrus, "banana", "chery", "pear"];
+console.log(fruits);
+
+//* String Spread
+let buryan = "Buryan yemegi hangi yoreye aittir.";
+//! When we want to open a string with spread, it will change to array from letters
+const charBuryan = [...buryan];
+console.log(buryan);
+console.log(charBuryan);
+
+//* Max() - Dizileri fonksiyonlara acik bir sekilde parametre vermek icin
+console.log(Math.max(1, 2, 3, 33, 4, 5));
+
+const numbers = [3, 1, 23, 49, 52, 44];
+// max method returns value, so we need to open our array.
+console.log(Math.max(...numbers));
+
+//* Array Copy
+const myNumbers = [3, 5, 5, [7, 8]];
+const herNumbers = [-5, -4, ...myNumbers, -22]; // Concatenation
+console.log(herNumbers);
+
+// const hisNumbers = herNumbers //? Shallow Copy
+const hisNumbers = [...herNumbers];//? Deep Copy
+hisNumbers.push(-55);
+hisNumbers[5][1] = 88; //? Nested olan degerler deep copy olmaz.
+console.log(hisNumbers);
+console.log(herNumbers);
+
+//! spread operatoru ile iki dizi arasinda kopyalama yapilabilir. bunlar birbirinden bagimsiz calisabilir. nested larda deep copy mantigi yoktur.
+
+//* Object Copy
