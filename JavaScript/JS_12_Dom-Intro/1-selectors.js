@@ -81,6 +81,28 @@ itemListSpread.forEach((x) => console.log((x.style.color = "red")));
 //*              QUERYSELECTOR()
 //* ========================================
 
+//? 1- queryselector() etiket secebilir.
+const myLi = document.querySelector("li"); //? Tag
+console.log(myLi);
+myLi.style.color = "orange";
+
+//? 2- queryselector() class secebilir.
+const addItem = document.querySelector(".add-item");
+console.log(addItem);
+addItem.style.border = "5px solid grey";
+addItem.style.padding = "1rem";
+
+//? 3- queryselector() id secebilir.
+const addBtn = document.querySelector("#btn");
+console.log(addBtn);
+addBtn.style.cursor = "pointer";
+
+//? 4- queryselector() ile CSS deki gibi secim yapilabilir.
+const itemH2 = document.querySelector(".item-list h2");
+console.log(itemH2);
+
+const addBtnType = document.querySelector("input[type='button']");
+console.log(addBtnType.value);
 //* ========================================
 //*              QUERYSELECTORALL()
 //* ========================================
