@@ -1,4 +1,4 @@
-console.log("***** SELECTORS *****")
+console.log("***** SELECTORS *****");
 
 document.title = "❤️ DOM-INTRO ❤️";
 
@@ -28,7 +28,7 @@ textInput.style.borderRadius = "10px";
 //*===========================================
 
 const myList = document.getElementsByTagName("li");
-console.log(myList); 
+console.log(myList);
 //? HTMLCollection(5) [li.list, li.list, li.list, li.list, li.list]
 //? return HTML Collection which is similar to array, but it's not array.
 
@@ -46,12 +46,12 @@ console.log(header[0]);
 // myList[3].innerText = "REACT / VUE / Swelte";
 myList[3].innerHTML = "REACT / VUE / Swelte / Angular";
 
-console.log(myList[2].textContent);//? Javascript - JS is an object-based language
+console.log(myList[2].textContent); //? Javascript - JS is an object-based language
 //? textContent HTML elementinin tum yazi dugumlerini CSS veya HTML 'e bakmasizin verir.
 
-console.log(myList[2].innerText);//? innerText CSS parse islemi yaparak yazi elementi dondurur.
+console.log(myList[2].innerText); //? innerText CSS parse islemi yaparak yazi elementi dondurur.
 
-console.log(myList[2].innerHTML) //? innerHTML tamamen HTML parse islemi yaparak elementlere ulasmamizi saglar
+console.log(myList[2].innerHTML); //? innerHTML tamamen HTML parse islemi yaparak elementlere ulasmamizi saglar
 
 //! Changing html here is problematic in the real world, not recommended. Hackers steal your password by js script.
 myList[4].innerHTML += `<li class="link"> CW </li>`;
@@ -62,6 +62,20 @@ myList[4].style.color = "white";
 //*===========================================
 //*          GETELEMENTSBYCLASSNAME()
 //*===========================================
+
+const itemList = document.getElementsByClassName("item-list");
+console.log(itemList); //?HTMLCollection [section.item-list]
+console.log(itemList[0]);
+
+//? Array.from() (HTMLCollection -> Array)
+const itemListArr = Array.from(itemList);
+console.log(...itemList);
+itemListArr.forEach((x) => console.log(x));
+
+//? SPREAD (HTMLCollection -> Array)
+const itemListSpread = [...itemList];
+console.log(itemListSpread);
+itemListSpread.forEach((x) => console.log(x));
 
 //* ========================================
 //*              QUERYSELECTOR()
