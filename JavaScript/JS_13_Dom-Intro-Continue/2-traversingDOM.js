@@ -37,6 +37,26 @@ console.log(addItem.children); //?HTMLCollection(3) [h2, input#input, input#btn
 addItem.children[0].style.color = "red"; //? h2
 console.log(addItem.parentNode.parentNode.children[0].children[0]); //? h1
 
+const header = document.querySelector("header")
+const h1 = header.firstElementChild
+console.log(addItem.lastElementChild.value)
+
+console.log(h1.firstChild) //? DOM SELECTORS (bir yazi elementinin icerisindeki yazi dugumunu verir)
+
 //*3- Yatay Yonde traverse
 //*----------------------------------------------
 //! nextElementSibling ,previousElementSibling
+
+const ul = document.querySelector("ul");
+
+const lists = ul.children;
+console.log(lists);
+
+const js = lists[2];
+console.log(js.innerText); //? Javascript
+const css = js.previousElementSibling;
+console.log(css.innerText);
+
+const django = js.nextElementSibling.nextElementSibling;
+console.log(django.innerText); //? Django
+
