@@ -106,3 +106,20 @@ console.log(addBtnType.value);
 //* ========================================
 //*              QUERYSELECTORALL()
 //* ========================================
+
+const lists = document.querySelectorAll("ul li"); //? Tagname
+console.log(lists); //? Nodelist
+
+lists.forEach((li) => console.log(li.innerText));
+
+console.log(
+  document.querySelectorAll("section.item-list ul li:nth-child(4)")[0].innerText
+);
+//! returns array even it has one member.
+
+console.log(
+  document.querySelector("section.item-list ul li:nth-child(4)").innerText
+);
+
+document.querySelector("section.item-list ul li:nth-child(4)").innerHTML =
+  "<p>Paragraf</p>";
