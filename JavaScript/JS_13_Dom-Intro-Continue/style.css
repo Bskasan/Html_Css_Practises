@@ -7,3 +7,9 @@
   .bg-tomato {
     background-color: tomato;
   }
+
+  #par:hover{
+    font-size: 1.2rem;
+    color: white;
+    background-color: blue;
+  }
