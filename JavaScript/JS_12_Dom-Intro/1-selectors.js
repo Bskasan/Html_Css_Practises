@@ -75,7 +75,7 @@ itemListArr.forEach((x) => console.log(x));
 //? SPREAD (HTMLCollection -> Array)
 const itemListSpread = [...itemList];
 console.log(itemListSpread);
-itemListSpread.forEach((x) => console.log(x));
+itemListSpread.forEach((x) => console.log((x.style.color = "red")));
 
 //* ========================================
 //*              QUERYSELECTOR()
