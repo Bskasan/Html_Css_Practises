@@ -21,7 +21,7 @@ newPar.id = "par";
 newPar.className = "center red";
 
 //? setAttribute()
-newPar.setAttribute("id", "para"); 
+newPar.setAttribute("id", "para");
 
 //? classList
 newPar.classList.add("bg-tomato", "left");
@@ -43,4 +43,13 @@ console.log(newPar.getAttribute("name")); //?null
 console.log(myInput.getAttribute("name")); //? languages
 console.log(myInput.getAttribute("type")); //? text
 
+//? alternative
+console.log(myInput.id);
+console.log(newPar.className);
 
+//? INNER HTML (Ciddi guvenlik aciklari var.)
+
+const newDiv = document.createElement("div")
+newDiv.id = "new-div"
+document.getElementById("btn").after(newDiv)
+newDiv.innerHTML += `<li id="go" class="red">Go</li>`
