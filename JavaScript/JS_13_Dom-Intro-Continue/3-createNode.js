@@ -12,7 +12,7 @@ const h2 = document.querySelector(".item-list h2");
 h2.after(newPar);
 //h2.before(newPar);
 
-//?
+//? INPUT value
 const myInput = document.getElementById("input"); //? element
 console.log(myInput.value); //? value
 
@@ -20,5 +20,27 @@ console.log(myInput.value); //? value
 newPar.id = "par";
 newPar.className = "center red";
 
+//? setAttribute()
+newPar.setAttribute("id", "para"); 
+
 //? classList
+newPar.classList.add("bg-tomato", "left");
+newPar.classList.remove("left"); //? removed left class.
+
+if (!newPar.classList.contains("blue")) {
+  newPar.classList.add("blue");
+} else {
+  newPar.classList.add("orange");
+}
+
+//? toggle
+newPar.classList.toggle("white"); //? if it doesn't have white class, it will check and add the class automatically.
+
+//? getAttribute()
+console.log(newPar.getAttribute("class"));
+console.log(newPar.getAttribute("id"));
+console.log(newPar.getAttribute("name")); //?null
+console.log(myInput.getAttribute("name")); //? languages
+console.log(myInput.getAttribute("type")); //? text
+
 

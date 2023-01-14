@@ -1,15 +1,16 @@
 .red {
-    color: red;
-  }
-  .center {
-    text-align: center;
-  }
-  .bg-tomato {
-    background-color: tomato;
-  }
+  color: red;
+}
+.center {
+  text-align: center;
+}
 
-  #par:hover{
-    font-size: 1.2rem;
-    color: white;
-    background-color: blue;
-  }
+.bg-tomato {
+  background-color: tomato;
+}
+
+#par:hover {
+  font-size: 1.2rem;
+  color: white;
+  background-color: blue;
+}
