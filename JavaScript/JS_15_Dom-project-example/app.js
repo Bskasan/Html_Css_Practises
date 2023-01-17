@@ -170,3 +170,5 @@ function TopScoreCheck() {
     localStorage.setItem("highScore", +scorePc.innerText);
   }
 }
+
+//! GAME IS READY TO BE PLAYED !//
