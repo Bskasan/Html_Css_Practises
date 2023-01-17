@@ -19,13 +19,13 @@ header{
     text-align: center;
     padding: 10px;
     border: 2px solid red;
-    background-color: rgb(49, 51, 49);
+    background-color: rgb(93, 97, 93);
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
 h2 {
-  color: rgb(214, 134, 134);
+  color: rgb(231, 147, 147);
   font-family: "Comfortaa", cursive;
 }
 
@@ -165,7 +165,8 @@ button:hover {
 }
 .result-msg {
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: "Comfortaa", cursive;
+  font-size: 1.2rem;
   left: -120%;
   padding: 1rem 0;
   transition: all 0.5s ease;
