@@ -24,6 +24,7 @@ const select = document.querySelector(".select"); //? to get select div
 
 const scoreYou = document.getElementById("you"); //? For our score
 const scorePc = document.getElementById("pc"); //? For pc score
+const domTopScore = document.querySelector(".top-score");
 
 // Modal Selectors
 const resultDiv = document.querySelector(".result-msg");
@@ -50,7 +51,7 @@ select.addEventListener("click", (e) => {
   }
 });
 
-//*** FOR MODAL BUTTON ***/
+//*** FOR MODAL BUTTON TO CLOSE THE WINDOW && RELOADING THE PAGE ***/
 modalBtn.addEventListener("click", () => {
   //modalEl.style.display = "none";
   modalEl.classList.remove("show");
@@ -98,8 +99,10 @@ function result() {
     final.innerHTML = `💃 You Win🕺`;
     document.querySelector(".modal").style.backgroundColor = "#5AB7AC";
     modalBtn.style.color = "#5AB7AC";
+    TopScoreCheck();
   }
 
+  //! TO DISPLAY OUR MODAL SCREEN (DISPLAY: NONE -> DISPLAY: BLOCK)
   if (scorePc.innerText == "10" || scoreYou.innerText == "10") {
     Modal();
   }
@@ -145,4 +148,25 @@ function Draw() {
 //*** MODAL USAGE FUNCTION ***/
 function Modal() {
   modalEl.classList.add("show");
+}
+
+//*** TO STORE OUR HIGHSCORE ***/
+//To store the top score by using local Storage.
+let storagedScore = localStorage.getItem("highScore");
+let topScore; //Top score that will be seen on the screen.
+
+if (storagedScore) {
+  topScore = `10 - ${storagedScore}`;
+} else {
+  topScore = "0 - 0";
+}
+
+domTopScore.innerText = topScore;
+
+function TopScoreCheck() {
+  storagedScore || localStorage.setItem("highScore", scorePc.innerText);
+
+  if (storagedScore >= scorePc.innerText) {
+    localStorage.setItem("highScore", +scorePc.innerText);
+  }
 }
