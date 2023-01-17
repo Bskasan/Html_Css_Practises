@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Stone, Paper, Scissors</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <div class="top">Top Score : <span class="top-score"></span></div>
+
+        <div class="score">
+          <div>You <span id="you">0 </span> : <span id="pc"> 0</span> Pc</div>
+        </div>
+        <p class="description">Please make your selection</p>
+
+        <div class="select">
+          <div id="tas">
+            <img src="./assets/tas.png" alt="tas" class="tas" />
+          </div>
+          <div id="kagit">
+            <img src="./assets/kagit.png" alt="kagit" class="kagit" />
+          </div>
+          <div id="makas">
+            <img src="./assets/makas.png" alt="makas" class="makas" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <div class="match">
+          <div id="your-choice"></div>
+          <div id="pc-choice"></div>
+        </div>
+        <div class="result">
+          <div class="result-msg"></div>
+        </div>
+      </div>
+
+      <div class="modal-container">
+        <div class="modal">
+          <p>
+            Game Over <br />
+            <span id="final">☹️ You Lost ☹️</span>
+          </p>
+          <button id="modal-ok">Play Again</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
