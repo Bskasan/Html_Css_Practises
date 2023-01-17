@@ -5,6 +5,7 @@
   padding: 0 px;
   margin: 0 px;
 }
+
 body {
   background-color: #121212;
   font-family: "Comfortaa", cursive;
@@ -13,6 +14,21 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
+header{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid red;
+    background-color: rgb(49, 51, 49);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+  color: rgb(214, 134, 134);
+  font-family: "Comfortaa", cursive;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -23,6 +39,7 @@ body {
   margin: auto;
   padding: 20px;
 }
+
 .top {
   color: #fb778b;
   text-align: right;
@@ -31,6 +48,7 @@ body {
   width: 100%;
   margin: 20px 40px 30px 0px;
 }
+
 .score {
   display: flex;
   justify-content: center;
@@ -157,11 +175,11 @@ button:hover {
   left: 0;
 }
 .result-msg.active.yellow {
-  background-color: #FFC538;
+  background-color: #ffc538;
 }
 .result-msg.active.red {
   background-color: #fb778b;
 }
 .result-msg.active.green {
-  background-color: #5AB7AC;
+  background-color: #5ab7ac;
 }
