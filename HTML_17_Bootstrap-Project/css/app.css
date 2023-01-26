@@ -1,11 +1,26 @@
-/*! -------------- 1- NAVBAR ---------------- */
-
-.navbar-nav{
-    font-size: 1.3rem;
-    
+:root {
+  --red: #dc3545;
 }
 
+/*! -------------- 1- NAVBAR ---------------- */
 
+.navbar-nav {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav-link {
+  transition: color 0.7s;
+}
+
+/* .nav-link.active:hover{
+    color: green !important;
+} */
+
+.nav-link:hover {
+  color: var(--red);
+}
 
 /*! ------------- 2- CAROUSEL --------------- */
 
