@@ -1,5 +1,6 @@
 :root {
   --red: #dc3545;
+  --white: white;
   --backgroundColor: #FEF5E1;
 }
 
@@ -31,6 +32,22 @@
 }
 
 /*! ------------- 2- CAROUSEL --------------- */
+
+.carousel-item{
+    max-height: cal(100vh - 93px);
+}
+
+.carousel-caption .btn{
+    width: 7rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.carousel-caption .btn:hover{
+    transition: 1s;
+    background-color: #4a5050;
+    color: var(--white);
+}
 
 /*! ------------ 3- ABOUT SECTION ----------- */
 
