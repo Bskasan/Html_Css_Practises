@@ -1,11 +1,15 @@
 :root {
   --red: #dc3545;
+  --backgroundColor: #FEF5E1;
 }
 
 /*! -------------- 1- NAVBAR ---------------- */
 
+.navbar{
+    background-color: var(--backgroundColor);
+}
 .navbar-nav {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -17,6 +21,10 @@
 /* .nav-link.active:hover{
     color: green !important;
 } */
+
+.nav-link.active:hover {
+  color: var(--red) !important;
+}
 
 .nav-link:hover {
   color: var(--red);
