@@ -15,10 +15,21 @@ console.log("FETCH");
 fetch("https://api.github.com/users").then((res) =>
   res
     .json()
-    .then((data) => console.log(data))
+    .then((data) => showGitHubUsers(data))
     .catch((err) => console.log(err))
 );
 //? Request from the API.
 //? and we get Response Object.
 //? we can manipulate it.
 //? with json(), we can access to the real data and now it is possible to get this data and manipulate it.
+
+const showGitHubUsers = (users) => {
+  console.log(users);
+  const userArticle = document.querySelector(".users");
+
+  users.forEach((user) => {
+    //console.log(user);
+    userArticle.innerHTML += `<img src=${user.avatar_url} alt = ""/>`;
+    
+  });
+};
