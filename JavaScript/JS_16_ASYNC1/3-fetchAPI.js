@@ -10,4 +10,5 @@
 //? fetch() fonksiyonu veri getirmek istediginiz kaynagin yolunu gosteren zorunlu
 //? bir parametre almaktadir ve bu istegin cevabini gosteren bir Promise dondurmektedir.
 
-console.log("FETCH")
+console.log("FETCH");
+
