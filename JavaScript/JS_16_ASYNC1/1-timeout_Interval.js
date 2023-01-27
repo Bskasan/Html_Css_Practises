@@ -54,7 +54,14 @@ setTimeout(() => {
 //* Asenkron (setInterval, clearInterval)
 //*------------------------------------------------
 
-
+let counter = 0;
+let sec1 = setInterval(() => {
+  console.log(++counter);
+  if (counter > 9) {
+    clearInterval(sec1); //? Need argument for clearInterval
+    console.log("Timer Stopped");
+  }
+}, 1000);
 
 //! Callback Hell (nested ve birbirine bagli callback'ler)
 //!-----------------------------------------------------
