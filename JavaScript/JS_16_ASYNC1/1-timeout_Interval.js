@@ -17,8 +17,6 @@
 //? Dosya Okuma/Yazma islemleri gibi zaman tuketen kodlarda Asyn Programlama
 //? kullanilmasi cok onemlidir.
 
-
-
 //* Senkron
 //* ------------------------------------------------
 const wait = (waitingTime) => {
@@ -37,7 +35,9 @@ console.log("fs13");
 //* Asenkron (setTimeout)
 //*------------------------------------------------
 //! Performance of your code is IMPORTANT!!!
-
+//? Time = 1000ms -> 1s
+//? It means that execute the callback function after time has passed.
+setTimeout(() => {}, 1000);
 
 //* Asenkron (setInterval, clearInterval)
 //*------------------------------------------------
