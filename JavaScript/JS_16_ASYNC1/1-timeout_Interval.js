@@ -3,6 +3,7 @@
 //*==================================================
 
 //! Javascript, single-threaded ve Asenkron Programlama dilidir.
+//! Wep APIs help JS to be asyncron programming language.
 
 //? Asenkron Programlama
 //? --------------------------------------------------------------
@@ -16,11 +17,27 @@
 //? Dosya Okuma/Yazma islemleri gibi zaman tuketen kodlarda Asyn Programlama
 //? kullanilmasi cok onemlidir.
 
+
+
 //* Senkron
 //* ------------------------------------------------
+const wait = (waitingTime) => {
+  const startTime = new Date().getTime();
+  while (new Date().getTime() < startTime + waitingTime) {}
+};
+
+console.log("***************** ASYNC *****************");
+console.log("hello world");
+//alert("hi"); //? blocking our code.
+console.time("myTimer"); //? to check time when debugging.
+wait(1000); //? blocking our code.
+console.timeEnd("myTimer");
+console.log("fs13");
 
 //* Asenkron (setTimeout)
 //*------------------------------------------------
+//! Performance of your code is IMPORTANT!!!
+
 
 //* Asenkron (setInterval, clearInterval)
 //*------------------------------------------------
