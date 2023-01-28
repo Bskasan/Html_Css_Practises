@@ -70,22 +70,36 @@
   transform: translate(-50%, -50%); */
 }
 
-.carousel-indicators{
-    gap: 0.5rem;
+.carousel-indicators {
+  gap: 0.5rem;
 }
 
-.carousel-indicators button{
-    background-color: var(--red) !important;
-    padding: 0.2rem !important;
-    width: 3rem !important;
-    border-radius: 40% !important;
-    
+.carousel-indicators button {
+  background-color: var(--red) !important;
+  padding: 0.2rem !important;
+  width: 3rem !important;
+  border-radius: 40% !important;
 }
-
 
 /*! ------------ 3- ABOUT SECTION ----------- */
 
 /*! ------------- 4- INSTRUCTORS -------------*/
+section#instructors .card {
+  transition: transform 0.5s;
+}
+
+section#instructors .card:hover {
+  transform: scale(1.03);
+}
+
+section#instructors i {
+  transition: opacity 0.7s;
+}
+
+section#instructors i:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
 
 /*! ----------- 4- STUDENTS SECTION ----------*/
 
