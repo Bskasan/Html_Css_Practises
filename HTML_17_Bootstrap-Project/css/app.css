@@ -115,6 +115,9 @@ section#courses .nav-link{
   color: var(--white);
 }
 
+section#courses .nav-pills button{
+  font-size: 0.9rem;
+}
 /*! ----------- 6- CONTACT SECTION ------------ */
 
 /*! --------------- 7- FOOTER ----------------- */
