@@ -15,7 +15,7 @@
   font-weight: 600;
 }
 
-.nav-link {
+.navbar .nav-link {
   transition: color 0.7s;
 }
 
@@ -23,11 +23,11 @@
     color: green !important;
 } */
 
-.nav-link.active:hover {
+.navbar .nav-link.active:hover {
   color: var(--red) !important;
 }
 
-.nav-link:hover {
+.navbar .nav-link:hover {
   color: var(--red);
 }
 
@@ -104,6 +104,16 @@ section#instructors i:hover {
 /*! ----------- 4- STUDENTS SECTION ----------*/
 
 /*! ----------- 5- COURSES SECTION ----------- */
+
+section#courses .nav-link.active {
+  background-color: var(--red);
+  color: var(--white);
+  font-weight: 600;
+}
+
+section#courses .nav-link{
+  color: var(--white);
+}
 
 /*! ----------- 6- CONTACT SECTION ------------ */
 
