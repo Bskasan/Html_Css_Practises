@@ -1,6 +1,6 @@
-//*========================================
-//*             3- FETCH API
-//*========================================
+//*==================================================
+//* 3- FETCH API(APPLICATION PROGRAMMING INTERFACE)
+//*==================================================
 
 //? Dis kaynaklardan veri getirmek icin kullanilan basit bir arabirimdir.
 //? Ag istekleri yapmamizi ve cevaplari yontebilmemize olanak saglar.
@@ -9,9 +9,12 @@
 
 //? fetch() fonksiyonu veri getirmek istediginiz kaynagin yolunu gosteren zorunlu
 //? bir parametre almaktadir ve bu istegin cevabini gosteren bir Promise dondurmektedir.
+//? Fetch yapisi promise yapisinin biraz daha basitlestirilmis halidir.
+
 
 console.log("FETCH");
 
+//! ---- GETTING THE DATA ---- !//
 fetch("https://api.github.com/users").then((res) =>
   res
     .json()
@@ -22,6 +25,7 @@ fetch("https://api.github.com/users").then((res) =>
 //? and we get Response Object.
 //? we can manipulate it.
 //? with json(), we can access to the real data and now it is possible to get this data and manipulate it.
+
 
 const showGitHubUsers = (users) => {
   console.log(users);
