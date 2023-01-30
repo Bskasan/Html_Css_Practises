@@ -11,6 +11,16 @@
 //? bir parametre almaktadir ve bu istegin cevabini gosteren bir Promise dondurmektedir.
 //? Fetch yapisi promise yapisinin biraz daha basitlestirilmis halidir.
 
+//? GET -> reading, okuma getting from another server.
+//? POST -> Adding/writing new input to our server, veritabani. Yeni bir kayit islemi. For instance, you have e-commerce website and you will get new user account, you need to save this person's detail by using post.
+//? PATCH -> Partly Update, Kismi guncelleme
+//? PUT -> Full Update, Tam Guncelleme
+//? DELETE -> Delete, silme
+//? Dunya uzerinde hersey API lar uzerinden yuruyor. Google sell APIs for example.
+
+//? json -> JavaScript Object Notation
+
+
 
 console.log("FETCH");
 
