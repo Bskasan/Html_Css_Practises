@@ -18,19 +18,23 @@
 //? DELETE -> Delete, silme
 //? Dunya uzerinde hersey API lar uzerinden yuruyor. Google sell APIs for example.
 
-//? json -> JavaScript Object Notation
+//? json -> JavaScript Object Notation -> js lestirme
 
 
 
 console.log("FETCH");
 
 //! ---- GETTING THE DATA ---- !//
-fetch("https://api.github.com/users").then((res) =>
-  res
-    .json()
+fetch("https://api.github.com/users").then((res) =>{
+  if(!res.ok){ //! checking the package successfully coming or not.
+    throw new Error(`Something went wrong: ${res.status}`);
+  }
+  return res.json();
+})
+  
     .then((data) => showGitHubUsers(data))
     .catch((err) => console.log(err))
-);
+;
 //? Request from the API.
 //? and we get Response Object.
 //? we can manipulate it.
@@ -41,6 +45,9 @@ const showGitHubUsers = (users) => {
   console.log(users);
   const userArticle = document.querySelector(".users");
 
+  //! --- OPTIONAL CHAINING ---- !//
+  //! --- IF IT'S NOT NULL, NO ERROR --- !//
+  // users?.forEach
   users.forEach((user) => {
     //console.log(user);
     userArticle.innerHTML += `
