@@ -20,26 +20,29 @@
 
 //? json -> JavaScript Object Notation -> js lestirme
 
-
-
 console.log("FETCH");
 
 //! ---- GETTING THE DATA ---- !//
-fetch("https://api.github.com/users").then((res) =>{
-  if(!res.ok){ //! checking the package successfully coming or not.
-    throw new Error(`Something went wrong: ${res.status}`);
-  }
-  return res.json();
-})
-  
-    .then((data) => showGitHubUsers(data))
-    .catch((err) => console.log(err))
-;
+fetch("https://api.github.com/users")
+  .then((res) => {
+    if (!res.ok) {
+      //! checking the package successfully coming or not.
+      throw new Error(`Something went wrong: ${res.status}`);
+    }
+    return res.json();
+  })
+
+  .then((data) => showGitHubUsers(data))
+  .catch((err) => {
+    //! Error Handling
+    console.log(err);
+    const userArticle = document.querySelector(".users");
+    userArticle.innerHTML = `<h2 class="text-warning display-6">${err}</h2>`;
+  });
 //? Request from the API.
 //? and we get Response Object.
 //? we can manipulate it.
 //? with json(), we can access to the real data and now it is possible to get this data and manipulate it.
-
 
 const showGitHubUsers = (users) => {
   console.log(users);
@@ -55,3 +58,6 @@ const showGitHubUsers = (users) => {
     <img class="w-25 mb-4" src=${user.avatar_url} alt = ""/>`;
   });
 };
+
+//? ERROR HANDLING AND EXCEPTION HANDLING
+//? CATEGORIZE THE ERRORS
