@@ -61,12 +61,14 @@ const renderNews = (news) => {
   news.forEach((item) => {
     const { title, description, urlToImage, url } = item;
     newsDiv.innerHTML += `
-    <div class="card col-md-6 col-lg-5 col-xl-3">
-        <img src="${urlToImage}" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">${title}</h5>
-            <p class="card-text">${description}</p>
-            <a href="${url}" class="btn btn-danger">Details...</a>
+    <div class="col-md-6 col-lg-5 col-xl-3">
+        <div class="card">
+            <img src="${urlToImage}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${title}</h5>
+                <p class="card-text">${description}</p>
+                <a href="${url}" class="btn btn-danger">Details...</a>
+            </div>
         </div>
     </div>
   `;
