@@ -45,13 +45,33 @@ const getNews = async () => {
       throw new Error("Something went wrong!");
     }
     const data = await res.json();
-    console.log(data.articles);
+    //console.log(data.articles);
+    renderNews(data.articles);
   } catch (error) {
     renderError();
   }
 };
 
 // 94d9a13ccee34f9e890d74f6aa65b7a7
+
+const renderNews = (news) => {
+  console.log(news);
+  const newsDiv = document.getElementById("news");
+
+  news.forEach((item) => {
+    const { title, description, urlToImage, url } = item;
+    newsDiv.innerHTML += `
+    <div class="card col-md-6 col-lg-5 col-xl-3">
+        <img src="${urlToImage}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${title}</h5>
+            <p class="card-text">${description}</p>
+            <a href="${url}" class="btn btn-danger">Details...</a>
+        </div>
+    </div>
+  `;
+  });
+};
 
 const renderError = (err) => {
   console.log(err);
