@@ -35,6 +35,8 @@ fetch("https://api.github.com/users")
   .then((data) => showGitHubUsers(data))
   .catch((err) => {
     //! Error Handling
+    //! ERROR HANDLING AND EXCEPTION HANDLING
+    //! CATEGORIZE THE ERRORS
     console.log(err);
     const userArticle = document.querySelector(".users");
     userArticle.innerHTML = `<h2 class="text-warning display-6">${err}</h2>`;
