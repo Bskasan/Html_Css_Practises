@@ -41,11 +41,25 @@ const getNews = async () => {
 
   try {
     const res = await fetch(URL);
+    if (!res.ok) {
+      throw new Error("Something went wrong!");
+    }
     const data = await res.json();
     console.log(data.articles);
-  } catch (error) {}
+  } catch (error) {
+    renderError();
+  }
 };
 
 // 94d9a13ccee34f9e890d74f6aa65b7a7
+
+const renderError = (err) => {
+  console.log(err);
+  const newsDiv = document.getElementById("news");
+  newsDiv.innerHTML = `
+  <h2 class="text-danger">News cannot be fetched</h2>
+  <img src="./img/404.png" alt="" />
+  `;
+};
 
 getNews();
