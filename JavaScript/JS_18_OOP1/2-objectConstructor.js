@@ -21,6 +21,12 @@ function Book(title, author, year) {
   //};
 }
 
+//! Prototype, belirli bir Nesne'nin (Object) tum instance'larina
+//! kolay bir sekilde metotlar tanimlamaya izin vermektedir.
+//! Prototip alaninda bir metot tanimlamanin avantaji bu metot'un
+//! olusan tum instance'larin belleginde yer kaplamamasi ancak tum
+//! instance'larin bu metota ulasabilmesidir.
+
 //? We move our function/method to prototype area. We call only one time this method for each object. It's effective for memory and performance.
 //* Ornegin Book nesnesinin tum instance'lari getSummary() fonksiyonunu miras alabilir. Ancak, getSummary() fonksiyonu bellekte sadece bir yer kaplamaktadir.
 
@@ -38,13 +44,20 @@ console.log(book1.getSummary());
 
 console.log(book1.__proto__);
 
+//book1.price = 250;
+
 // console.log(new Date().getFullYear());
 
 const book2 = new Book("Simyaci", "Pauolo Coelho", 1990);
 console.log(book2.getSummary());
 
-//! Prototype, belirli bir Nesne'nin (Object) tum instance'larina
-//! kolay bir sekilde metotlar tanimlamaya izin vermektedir.
-//! Prototip alaninda bir metot tanimlamanin avantaji bu metot'un
-//! olusan tum instance'larin belleginde yer kaplamamasi ancak tum
-//! instance'larin bu metota ulasabilmesidir.
+Book.prototype.price = 0;
+book1.price = 200;
+book2.price = 300;
+
+console.log(book1, book2);
+
+//? INHERITANCE (Kalitim - ES5)
+//?----------------------------------------------------------
+
+//? Sub-Class
