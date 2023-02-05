@@ -45,4 +45,18 @@ const book2 = new Book("Simyaci", "Pauolo Coelho", 1990);
 console.log(book2.getSummary());
 console.log(book2.getAge());
 
+//? Defining Sub-Class (Inheritance)
 
+class Magazine extends Book {
+  constructor(title, author, year, month) {
+    //! Book'un constructor'i cagrildi
+    super(title, author, year); //! Book'un prototpye kopyalanmis
+    this.month = month;
+  }
+}
+
+//? Creating Magazine's instance here:
+const mag1 = new Magazine("SRE", "Einstion", 1930, "Nov");
+console.log(mag1);
+console.log(mag1.getAge());
+console.log(mag1.getSummary());
