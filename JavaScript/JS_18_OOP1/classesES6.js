@@ -26,18 +26,23 @@ class Book {
     //  }
   }
 
-  //* Funtions go to the prototype area with new way which come with ES6.
+  //! Funtions go to the prototype area with new way which come with ES6.
   getSummary() {
     return `${this.title} was writtten by ${this.author} in ${this.year}`;
   }
+
+  getAge() {
+    return `${new Date().getFullYear() - this.year}`;
+  }
 }
 
-//! Book kalibinda yeni bir ornek (instance) olusturduk.
+//! Creating new instances
 const book1 = new Book("Kasagi", "Ömer Seyfettin", 1920);
 console.log(book1);
 console.log(book1.getSummary());
 
-//? instance
 const book2 = new Book("Simyaci", "Pauolo Coelho", 1990);
 console.log(book2.getSummary());
-// console.log(book2.getAge())
+console.log(book2.getAge());
+
+
