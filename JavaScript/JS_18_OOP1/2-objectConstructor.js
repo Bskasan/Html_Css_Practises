@@ -57,7 +57,26 @@ book2.price = 300;
 
 console.log(book1, book2);
 
+console.log("---------------- INHERITANCE -----------------");
+
 //? INHERITANCE (Kalitim - ES5)
 //?----------------------------------------------------------
 
 //? Sub-Class
+function Magazine(title, author, year, month) {
+  //? Inheritance
+  Book.call(this, title, author, year);
+
+  this.month = month;
+}
+
+//! it's not right way, will be problem in the future
+//! Magazine.prototype = Book.prototype;
+//! We can get book property like this:
+Magazine.prototype = Object.create(Book.prototype);
+
+const magazine1 = new Magazine("SRE", "Einstein", 1930, "November");
+console.log(magazine1);
+
+//! not directly inherit from property.
+console.log(magazine1.getSummary());
