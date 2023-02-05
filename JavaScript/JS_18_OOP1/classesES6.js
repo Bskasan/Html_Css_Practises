@@ -12,4 +12,32 @@
 //? Bir parent class'in degisken ve fonksiyonelliği extends
 //? keyword'u ile child class'a gecmektedir.(INHERITANCE)
 
-console.log("*** ES6 - Classes ***")
+console.log("*** ES6 - Classes ***");
+
+class Book {
+  constructor(title, author, year) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
+
+    //? Bu alanda yazilan bir metot butun instance'ların belleginde tek tek yer kaplar.
+    //  this.getTitle = function () {
+    //    return this.title
+    //  }
+  }
+
+  //* Funtions go to the prototype area with new way which come with ES6.
+  getSummary() {
+    return `${this.title} was writtten by ${this.author} in ${this.year}`;
+  }
+}
+
+//! Book kalibinda yeni bir ornek (instance) olusturduk.
+const book1 = new Book("Kasagi", "Ömer Seyfettin", 1920);
+console.log(book1);
+console.log(book1.getSummary());
+
+//? instance
+const book2 = new Book("Simyaci", "Pauolo Coelho", 1990);
+console.log(book2.getSummary());
+// console.log(book2.getAge())
