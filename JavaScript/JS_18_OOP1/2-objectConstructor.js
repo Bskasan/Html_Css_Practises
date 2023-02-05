@@ -22,6 +22,21 @@ function Book(title, author, year) {
 }
 
 //? Creating an Instance of new object from object constructor
-const book1 = new Book("Kasagi", "Omer Seyfeddin", 1920);
+//? It is easier and cheaper way of instancing of many objects from constructor.
+const book1 = new Book("Kasagi", "Omer Seyfeddin", 1920); // ! book1 --> instance.
 console.log(book1);
 console.log(book1.getSummary());
+
+// console.log(new Date().getFullYear());
+
+const book2 = new Book("Simyaci", "Pauolo Coelho", 1990);
+console.log(book2.getSummary());
+
+//! Prototype, belirli bir Nesne'nin (Object) tum instance'larina
+//! kolay bir sekilde metotlar tanimlamaya izin vermektedir.
+//! Prototip alaninda bir metot tanimlamanin avantaji bu metot'un
+//! olusan tum instance'larin belleginde yer kaplamamasi ancak tum
+//! instance'larin bu metota ulasabilmesidir.
+
+//* Ornegin Book nesnesinin tum instance'lari getSummary() fonksiyonunu miras alabilir.
+//* Ancak, getSummary() fonksiyonu bellekte sadece bir yer kaplamaktadir.
