@@ -35,7 +35,29 @@ class Book {
   getSummary() {
     return `${this.title} was writtten by ${this.author} in ${this.year}`;
   }
+
+  //? Class icerisinde public metotlar yardimiyla private degiskenler okunabilir.
+  //? Bu tip metotlara getter metot denilir.
+  //! getter metotlari class icerisinde tanimlanmalidir.
+  getId() {
+    return this.#id;
+  }
+
+  //? Class icerisinde public metotlar yardimiyla private degiskenlere yazilabilir.
+  //? Bu tip metotlara setter metot denilir.
+  //! setter metotlar class icerisinde tanimlanmalidir.
+  setId(id) {
+    this.#id = id;
+  }
 }
 
 const book1 = new Book("Simyaci", "Poelho Coelgo", 1988);
 console.log(book1);
+
+//? Private bir degiskenin degeri class disindan dogrudan okunamaz.
+// console.log(book1.#id)
+
+//? Private bir degiskenin degeri class disindan dogrudan degistirilemez
+// book1.#id = "123456"
+
+console.log(book1.getId());
