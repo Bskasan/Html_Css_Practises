@@ -22,3 +22,20 @@
 
 //! Private metotlara ise class disirasindan da eriselemez.
 //! Private metotlara ancak class icerisindeki diger metotlar ile erisilebilir.
+
+class Book {
+  //! Private property, variable
+  #id;
+  constructor(title, author, year) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
+  }
+
+  getSummary() {
+    return `${this.title} was writtten by ${this.author} in ${this.year}`;
+  }
+}
+
+const book1 = new Book("Simyaci", "Poelho Coelgo", 1988);
+console.log(book1);
