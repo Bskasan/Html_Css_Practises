@@ -45,6 +45,14 @@ class Magazine extends Book {
 
   //! Overrided Metot (Parent class'daki bir metodun farkli
   //! fonksiyonellikle ve ayni parametre listesi ile yeniden tanimlanmasi)
+  getSummary() {
+    return `${this.title} was writtten by ${this.author} in ${this.year} in ${this.month}`;
+  }
+
+  getSummaryParent() {
+    //! getSummary method from parent class.
+    return super.getSummary();
+  }
 }
 
 //? Magazine objesinin yeni bir instance
@@ -55,3 +63,6 @@ console.log(mag1.getAge());
 //?Overloaded Metot cagriliyor.
 mag1.setPrice(100, 1.2);
 console.log(mag1);
+
+console.log(mag1.getSummary());
+console.log(mag1.getSummaryParent());
