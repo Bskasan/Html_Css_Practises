@@ -26,14 +26,24 @@
 class Book {
   //! Private property, variable
   #id;
+
+  //! Static property tanimlamasi
+  //!! Static degiskenlere class degiskenleri adi verilir.
+  static counter = 0;
+
   constructor(title, author, year) {
     this.title = title;
     this.author = author;
     this.year = year;
+    this.#id = "111";
+
+    Book.counter++;
   }
 
   getSummary() {
-    return `${this.title} was writtten by ${this.author} in ${this.year}`;
+    return `${this.title} was writtten by ${
+      this.author
+    } and it's age is ${this.#computeAge()}`;
   }
 
   //? Class icerisinde public metotlar yardimiyla private degiskenler okunabilir.
@@ -49,6 +59,10 @@ class Book {
   setId(id) {
     this.#id = id;
   }
+
+  #computeAge() {
+    return new Date().getFullYear() - this.year;
+  }
 }
 
 const book1 = new Book("Simyaci", "Poelho Coelgo", 1988);
@@ -60,4 +74,47 @@ console.log(book1);
 //? Private bir degiskenin degeri class disindan dogrudan degistirilemez
 // book1.#id = "123456"
 
+//? Private degiskeni okuma
 console.log(book1.getId());
+
+//? Private degiskene deger atama
+console.log(book1.setId("4444"));
+
+console.log(book1);
+
+//? Private metotlar class disindan eriselemezler.
+//? Ancak class icerisindeki diger public metotlardan erisilebilirler.
+//! console.log(book1.#computeAge());
+console.log(book1.getSummary());
+
+//! Diger bir cok class-temelli dilde 3 farkli tanimlayici ile class'larin
+//! erisim kisitlamalari belirtilebilir.
+// public void deneme(){
+// }
+
+// protected Integer topla(){
+// }
+
+// private Double carp(){
+
+// }
+
+//? ******* STATIC ********
+// Book.prototype.counter = 0
+// book1.counter++
+// console.log(book1)
+
+// const book2 = new Book("XYZ", "Poelho Coelgo", 1920)
+// book2.counter++
+// console.log(book2)
+
+//! Static degiskenlere instance'lar uzerinden erislemez.
+console.log(book1.counter);
+
+//! Static degiskenler classname.property seklinde erisilir.
+console.log(Book.counter);
+
+const book2 = new Book("ffdgfdgfd", "Poelho Coelgo", 1920);
+const book3 = new Book("fdgdfgfd", "Poelho Coelgo", 1920);
+const book4 = new Book("fvfdvfdgdfgfd", "Poelho Coelgo", 1920);
+console.log(Book.counter);
