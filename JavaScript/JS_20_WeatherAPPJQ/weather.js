@@ -47,7 +47,7 @@ $(document).ready(() => {
   console.log("jquery dom is ready!!!");
   localStorage.setItem(
     "apiKey",
-    EncryptStringAES("4d8fb5b93d4af21d66a2948710284366")
+    EncryptStringAES("c329c3b96528c0c0f92577a6850e5a5e")
   );
 });
 
@@ -56,6 +56,26 @@ formJQ.submit((e) => {
   getWeatherDataFromAPI();
 });
 
-const getWeatherDataFromAPI = () => {
+const getWeatherDataFromAPI = async () => {
   const apiKey = DecryptStringAES(localStorage.getItem("apiKey"));
+  const cityNameInput = inputJQ.val(); //? to get the value
+  const units = "metric";
+  const lang = "tr";
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityNameInput}}&appid=${apiKey}}&units=${units}&lang=${lang}`;
+
+  //* jquery http request
+  //const response = await $.get(url);
+  //const response = await $.post(url);
+  await $.ajax({
+    type: "GET",
+    url: url,
+    dataType: "json",
+    success: (response) => {
+      console.log(response);
+    },
+    beforeSend: (request) => {},
+    complete: () => {},
+    error: (XMLHttpRequest) => {},
+  });
+  console.log(response);
 };
