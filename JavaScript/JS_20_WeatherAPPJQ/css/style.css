@@ -36,7 +36,7 @@ input {
   background: none;
   outline: none;
   color: inherit;
-  font-family: 'Itim', cursive;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -50,24 +50,23 @@ ul {
 }
 
 body {
-    font-family: 'Itim', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   background-image: url(../img/backgroundImg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   color: var(--text_dark);
   padding: 70px;
-  
 }
 
-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-h1{
-    font-family: 'Itim', cursive;
+h1 {
+  font-family: "Tilt Warp", cursive;
 }
 
 .container {
@@ -207,8 +206,9 @@ h1{
 }
 
 #logo {
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 200px;
+  margin-bottom: 30px;
 }
 
 /* MQ
